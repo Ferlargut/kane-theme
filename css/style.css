@@ -183,7 +183,8 @@ html {
 
 .about {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: #2c3e50; }
+  background: #2c3e50;
+  padding: 8% 4%; }
 
 .about__title {
   text-align: center;
@@ -197,10 +198,11 @@ html {
   line-height: 1.5em; }
 
 .about_img-size {
-  width: 75%; }
+  width: 80%; }
 
 .bars {
-  padding-right: 5%; }
+  padding-right: 5%;
+  margin-top: 15%; }
 
 .progress {
   height: 10px;
