@@ -97,37 +97,41 @@
                 <div class="col-12">
                     <h2 class="about__title about__title-color">ABOUT US</h2>
                 </div>
+                <div class="row">
+                    <hr class="hr col-2 col-offset-5">
+                </div>
             </div>
             <div class="row">
                 <div class="col-5 col-offset-1">
                     <p class="about__paragraph about__paragraph-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure eos molestiae illo quam nemo pariatur sint maiores consectetur repellendus, nam enim, adipisci, rerum animi, excepturi cum deleniti itaque similique incidunt.</p>
+                    <br>
                     <p class="about__paragraph about__paragraph-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus cum illum ducimus vero. Tempore, accusamus veniam quos amet non esse dolor temporibus provident molestiae voluptates at inventore similique minus, animi?</p>
-                    <div class="barras">
-                        <div class="">
-                            <div>
+                    <div class="bars">
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar"  style="width:97%">
                             </div>
                         </div>
-                        <p class="about__paragraph about__paragraph-color">HTML</p>
-                        <div class="">
-                            <div>
+                        <span class="about__paragraph about__paragraph-color">HTML</span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar"  style="width:90%">
                             </div>
                         </div>
-                        <p class="about__paragraph about__paragraph-color">CSS</p>
-                        <div class="">
-                            <div>
+                        <span class="about__paragraph about__paragraph-color">CSS</span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar"  style="width:55%">
                             </div>
                         </div>
-                        <p class="about__paragraph about__paragraph-color">JAVASCRIPT</p>
-                        <div class="">
-                            <div>
+                        <span class="about__paragraph about__paragraph-color">JAVASCRIPT</span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar"  style="width:75%">
                             </div>
                         </div>
-                        <p class="about__paragraph about__paragraph-color">PHP</p>
-                        <div class="">
-                            <div>
+                        <span class="about__paragraph about__paragraph-color">PHP</span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar"  style="width:85%">
                             </div>
                         </div>
-                        <p class="about__paragraph about__paragraph-color">PHOTOSHOP / ILLUSTRATOR</p>
+                        <span class="about__paragraph about__paragraph-color">PHOTOSHOP / ILLUSTRATOR</span>
                     </div>
                 </div>
                 <div class="col-5">
@@ -136,15 +140,16 @@
             </div>
         </div>
     </section>
-    <!--Parte Val-->
 
+
+    <!--Parte Val-->
     <!--Start Section What We Do-->
-    <section class="container">
+    <section class="container services">
       <div class="row">
-        <div class="col-12">
-          <h2>WHAT WE DO</h2>
-          <hr>
-          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+        <div class="col-12 services__title">
+            <h2 class="">WHAT WE DO</h2>
+            <hr class="services__hr ">
+            <h5 class="services__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
         </div>
       </div>
       <div class="row">
@@ -190,7 +195,7 @@
     <!--End Section What We Do-->
 
     <!--Start Section Awesome Team-->
-    <section class="container">
+    <section class="container" id="awesomeTeam">
       <div class="row">
         <div class="col-12">
           <h2>OUR AWESOME TEAM</h2>
@@ -267,21 +272,46 @@
     <!--End Section Awesome Team-->
 
     <!--Parte Zitle-->
-    <section id="best-price" class="container">
+    <section id="best-price">
+        <div class="row">
+            <h2 id="titulo-bestprice" class="texto-centrado padding-precios">
+                BEST PRICE GURANTEED
+            </h2>
+            <div id="linea-precios" class="texto-centrado col-offset-5"></div>
+        </div>
+        <div class="row texto-centrado">
+            <p id="subtitulo-bestprice">Donec sed odio dui. Etiam porta sem malesuada magna mollis eusmodi.</p>
+        </div>
         <div class="row">
             <div class="col-3">
                 <div class="contenedorPrecio texto-centrado">
                     <div class="row contenedorPrecio__item">
-                        <h5 class="contenedorPrecio__item--tituloPrecio">STARTER</h5>
-                    </div>
-                    <div>
-                        
+                        <h5 class="contenedorPrecio__item--tituloPrecio padding-precios">STARTER</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
+            <div class="col-3">
+                <div class="contenedorPrecio texto-centrado">
+                    <div class="row contenedorPrecio__item">
+                        <h5 class="contenedorPrecio__item--tituloPrecio padding-precios">BASIC</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="contenedorPrecio texto-centrado">
+                    <div class="row contenedorPrecio__item">
+                        <h5 class="contenedorPrecio__item--tituloPrecio padding-precios">FEATURE</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="contenedorPrecio texto-centrado">
+                    <div class="row contenedorPrecio__item">
+                        <h5 class="contenedorPrecio__item--tituloPrecio padding-precios">PROFESSIONAL</h5>
+                    </div>
+                </div>
+            </div>
+                
         </div>
     </section>
     <!-- fin zitle -->
