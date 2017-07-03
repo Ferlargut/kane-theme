@@ -6,7 +6,7 @@
 .container {
   width: 100%;
   max-width: 1200px;
-  margin: 20px auto; }
+  margin: 0px auto; }
 
 .templateRow, .row:before, .row:after {
   content: " ";
@@ -97,8 +97,72 @@
 .col-offset-12 {
   margin-left: 100%; }
 
+
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.about {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #2c3e50; }
+
+.about__title {
+  text-align: center; }
+
+.about__paragraph {
+  font-size: 12px; }
+
+.about__title-color, .about__paragraph-color {
+  color: #fff; }
+
+.about_img-size {
+  width: 75%; }
+
+/*seccion nancy*/
+.contenedor-precio {
+  border: solid 1px #27ad60; }
+
+/*fin nancy*/
+body,
+html {
+  width: 100%;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/*seccion angie*/
+.navegador {
+  background: #27ad60;
+  height: 130px; }
+
+.logo,
+.menu {
+  margin-top: 5%; }
+
+.menu__item--estilo,
+.social__icono--estilo {
+  text-decoration: none; }
+
+.menu__item--color,
+.social__icono--color {
+  color: #fff;
+  font-size: 100px; }
+
+.menu__item,
+.social {
+  margin-left: 5%;
+  display: inline-block; }
+
+#contacto {
+  background-image: url("../assets/img/img-divider.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  height: 300px;
+  text-align: center; }
+
+.clients-say {
+  background-color: #2c3e50; }
+  .clients-say .clients-say_item {
+    text-align: center; }
+
 
 .portada {
   height: 60vh;
@@ -127,5 +191,54 @@ body {
   border: 1px solid black;
   height: 80px;
   margin-top: 2%; }
+/*seccion nancy*/
+.texto-centrado {
+  text-align: center; }
+
+#best-price {
+  background-color: #2c3e50; }
+
+.contenedorPrecio {
+  border: solid 1px #27ad60; }
+  .contenedorPrecio .contenedorPrecio__item .contenedorPrecio__item--tituloPrecio {
+    font-family: "inherit", monospace;
+    color: #f5f5f5;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+.form__container {
+  background: #2c3e50;
+  color: #fff;
+  padding: 50px 0; }
+
+.form__items {
+  display: block;
+  margin-top: 15px; }
+
+.form__button {
+  border: none;
+  padding: 2%;
+  background: #453f45;
+  color: #fff; }
+
+.form__p--margin {
+  margin-bottom: 50px; }
+
+.center {
+  text-align: center; }
+
+hr {
+  margin: 20px 0;
+  box-sizing: content-box; }
+
+.hr {
+  width: 15%;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  height: 5px; }
+
+/*fin nancy*/
+
 
 /*# sourceMappingURL=style.css.map */
