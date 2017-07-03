@@ -260,7 +260,8 @@ html {
   margin-top: 0; }
 
 .contenedorPrecio {
-  border: solid 1px #27ad60; }
+  border: solid 1px #27ad60;
+  padding-bottom: 120px; }
   .contenedorPrecio .contenedorPrecio__item .contenedorPrecio__item--tituloPrecio {
     font-family: "inherit", monospace;
     color: #f5f5f5;

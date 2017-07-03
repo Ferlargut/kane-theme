@@ -220,6 +220,7 @@ html {
 }
 .contenedorPrecio{
   border: solid 1px $color-green;
+  padding-bottom:120px;
   .contenedorPrecio__item{
     .contenedorPrecio__item--tituloPrecio{
       @include titulos-precios($font-precios,$font-precio-color,$size-text);
@@ -241,18 +242,12 @@ html {
 .texto-azul{
   color: $color-txt;
 }
-// .fila-gris{
-//   background-color:$font-precio-color;
-// }
 /* fin del for para las segunda fila*/
 // segundo for
 @for $j from 1 through 3 {
   .fila-gris-#{$j}{
-    // @import .fila-gris;
-    // @import .padding-precios;
   background-color:$font-precio-color;
-  // padding-bottom:25px;
-  // margin-bottom: 25px;
+
   }
 }
 // fin del segundo for
