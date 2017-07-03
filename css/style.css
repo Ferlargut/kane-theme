@@ -140,6 +140,36 @@ html {
 .logo {
   margin-top: 5%; }
 
+  .menu .menu__item, .logo .menu__item {
+    display: inline-block;
+    margin-left: 5%; }
+    .menu .menu__item .menu__item--estilo, .logo .menu__item .menu__item--estilo {
+      text-decoration: none;
+      color: #fff;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+#portada {
+  height: 80vh;
+  background-image: url("../assets/img/carousel-bg.jpg");
+  background-size: cover; }
+
+.services {
+  background-color: #27ad60;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  color: #fff;
+  text-align: center; }
+  .services__title {
+    font-size: 25px; }
+  .services__hr {
+    width: 10%;
+    height: 5px;
+    background-color: #fff;
+    margin: 10px;
+    border: none;
+    border-style: none; }
+
+
 .menu {
   margin-top: 5%;
   margin-left: 5%;
@@ -271,5 +301,6 @@ hr {
   border: 0;
   border-bottom: 1px solid #fff;
   height: 5px; }
+
 
 /*# sourceMappingURL=style.css.map */

@@ -203,6 +203,27 @@ html {
 
 //Titulos//
 
+
+// What we Do style
+.services{
+  background-color: $color-green;
+  font-family: $font-principal;
+  font-weight: 200;
+  color: $font-ligth;
+  text-align: center;
+  &__title{
+    font-size: $size-title;
+  }
+  &__hr{
+    width: 10%;
+    height: 5px;
+    background-color: $font-ligth;
+    margin: 10px;
+    border: none;
+    border-style: none;
+  }
+}
+
 //FORM//
 .form__container{
     background: $color-blue;
@@ -237,3 +258,4 @@ hr{
     border-bottom: 1px solid $font-light;
     height: 5px;
 }
+
