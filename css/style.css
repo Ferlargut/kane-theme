@@ -97,6 +97,23 @@
 .col-offset-12 {
   margin-left: 100%; }
 
+
+.about {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #2c3e50; }
+
+.about__title {
+  text-align: center; }
+
+.about__paragraph {
+  font-size: 12px; }
+
+.about__title-color, .about__paragraph-color {
+  color: #fff; }
+
+.about_img-size {
+  width: 75%; }
+
 /*seccion nancy*/
 .contenedor-precio {
   border: solid 1px #27ad60; }
@@ -128,5 +145,6 @@ html {
   height: 80vh;
   background-image: url("../assets/img/carousel-bg.jpg");
   background-size: cover; }
+
 
 /*# sourceMappingURL=style.css.map */
