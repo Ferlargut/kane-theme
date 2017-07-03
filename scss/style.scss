@@ -49,7 +49,7 @@ html {
 
 .menu__item--color,
 .social__icono--color {
-  color: $font-ligth;
+  color: $font-light;
   font-size: 100px;
 }
 
@@ -71,6 +71,9 @@ html {
 // Estilos fer
 .clients-say{
     background-color: $color-blue;
+    .clients-say_item{
+        text-align: center;
+    }
 }
 // Fin fer
 
