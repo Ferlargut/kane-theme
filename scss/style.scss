@@ -20,37 +20,54 @@
   width: 75%;
 }
 // final ABOUT
-
 /*seccion nancy*/
-.contenedor-precio{
-	border: solid 1px $color-green;
+.contenedor-precio {
+  border: solid 1px $color-green;
 }
 /*fin nancy*/
 body,
 html {
   width: 100%;
   padding: 0;
+  font-family: $font-principal;
 }
-
+/*seccion angie*/
 .navegador {
   background: $color-green;
   height: 130px;
 }
 
-.menu , .logo{
+.logo,
+.menu {
   margin-top: 5%;
-
-  .menu__item {
-    display: inline-block;
-    margin-left: 5%;
-
-    .menu__item--estilo {
-      text-decoration: none;
-      color: $font-light;
-      font-family: $font-principal;
-    }
-  }
 }
+
+.menu__item--estilo,
+.social__icono--estilo {
+  text-decoration: none;
+}
+
+.menu__item--color,
+.social__icono--color {
+  color: $font-light;
+  font-size: 100px;
+}
+
+
+.menu__item,
+.social {
+  margin-left: 5%;
+  display: inline-block;
+}
+
+#contacto {
+  background-image: url('../assets/img/img-divider.jpg');
+  background-size: cover;
+  background-repeat: repeat;
+  height: 300px;
+  text-align: center;
+}
+
 // Estilos fer
 .clients-say{
     background-color: $color-blue;
@@ -59,14 +76,50 @@ html {
     }
 }
 // Fin fer
+
+
 // Estilos PORTADA
-#portada{
-	height:80vh;
-	background-image: url("../assets/img/carousel-bg.jpg");
-	background-size: cover;
+#portada {
+  height: 80vh;
+  background-image: url("../assets/img/carousel-bg.jpg");
+  background-size: cover;
 }
 // Fin estilos PORTADA
 
+//Titulos//
 
+//FORM//
+.form__container{
+    background: $color-blue;
+    color: $font-light;
+    padding: 50px 0;
+}
+.form__items{
+    display: block;
+    margin-top: 15px;
+}
+.form__button{
+    border: none;
+    padding: 2%;
+    background: $color-button;
+    color: $font-light;
+}
+.form__p--margin{
+    margin-bottom: 50px;
+}
 
+//Common//
+.center{
+    text-align: center;
+}
+hr{       
+    margin: 20px 0;
+    box-sizing: content-box;
+}
+.hr{
+    width: 15%; 
+    border: 0;
+    border-bottom: 1px solid $font-light;
+    height: 5px;
+}
 
