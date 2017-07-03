@@ -397,6 +397,15 @@ html {
   }
 }
 
+
+//Team style
+.team__container{
+  background: $color-green;
+  color: $font-light;
+  padding: 50px 0;
+}
+
+
 //FORM//
 .form{
     &__title{
