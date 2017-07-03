@@ -188,9 +188,7 @@ html {
     color: $font-light;
     cursor: pointer;
   }
-
 }
-
 .contenedor-social {
   margin-top: 10%;
 }
@@ -329,6 +327,7 @@ html {
 }
 .contenedorPrecio{
   border: solid 1px $color-green;
+  padding-bottom:120px;
   .contenedorPrecio__item{
     .contenedorPrecio__item--tituloPrecio{
       @include titulos-precios($font-precios,$font-precio-color,$size-text);
@@ -341,9 +340,24 @@ html {
   .contenedorPrecio__item-#{$i}{
   background-color:$color-green;
   padding-bottom:25px;
+  margin-bottom: 25px;
   }
 }
+.fila-blanca{
+  padding-bottom:10px;
+}
+.texto-azul{
+  color: $color-txt;
+}
 /* fin del for para las segunda fila*/
+// segundo for
+@for $j from 1 through 3 {
+  .fila-gris-#{$j}{
+  background-color:$font-precio-color;
+
+  }
+}
+// fin del segundo for
 /*fin nancy*/
 
 //Titulos//
@@ -409,6 +423,7 @@ html {
         }
     }
 }
+
 
 //Common//
 .center{
