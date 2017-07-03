@@ -1,6 +1,26 @@
 @import'grid';
 @import'variables';
 
+
+// incia ABOUT
+.about{
+  font-family: $font-principal;
+  background: $color-blue;
+}
+.about__title{
+  text-align: center;
+}
+.about__paragraph{
+  font-size: $size-text;
+}
+.about__title-color, .about__paragraph-color{
+  color: $font-light;
+}
+.about_img-size{
+  width: 75%;
+}
+// final ABOUT
+
 /*seccion nancy*/
 .contenedor-precio{
 	border: solid 1px $color-green;
@@ -39,6 +59,7 @@ html {
 	background-size: cover;
 }
 // Fin estilos PORTADA
+
 
 
 
