@@ -124,10 +124,9 @@ html {
       padding-bottom: 5%;
     }
 
-
     .contacto__list {
       margin-top: 15%;
-      font-size: 14px;
+      font-size: $size-cita;
       list-style: none;
 
       .contacto__list--item{
@@ -138,8 +137,35 @@ html {
           color: $font-light;
         }
       }
-
     }
+  }
+}
+
+.input {
+  font-size: $size-text;
+  width: 70%;
+}
+
+.btn-suscribe {
+  font-size: $size-text;
+  padding: 2%;
+  background: $color-button;
+  color: $font-light;
+  border: 1px solid $color-button;
+}
+
+.privacy {
+  font-size: 13px;
+  margin-top: 5%;
+  padding-bottom: 2%;
+  p {
+    color: $color-blue;
+  }
+
+  a{
+    color: $font-light;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
 // Estilos fer
@@ -228,7 +254,7 @@ html {
       }
 
     }
-
+}
 }
 /*fin nancy*/
 
@@ -240,7 +266,7 @@ html {
   background-color: $color-green;
   font-family: $font-principal;
   font-weight: 200;
-  color: $font-ligth;
+  color: $font-light;
   text-align: center;
   &__title{
     font-size: $size-title;
@@ -248,7 +274,7 @@ html {
   &__hr{
     width: 10%;
     height: 5px;
-    background-color: $font-ligth;
+    background-color: $font-light;
     margin: 10px;
     border: none;
     border-style: none;
