@@ -8,7 +8,6 @@
   max-width: 1200px;
   margin: 0px auto; }
 
-
 .templateRow, .row:before, .row:after {
   content: " ";
   display: table; }
@@ -98,32 +97,50 @@
 .col-offset-12 {
   margin-left: 100%; }
 
+/*seccion nancy*/
+.contenedor-precio {
+  border: solid 1px #27ad60; }
 
+/*fin nancy*/
 body,
 html {
   width: 100%;
-  padding: 0; }
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+/*seccion angie*/
 .navegador {
   background: #27ad60;
   height: 130px; }
 
-.menu, .logo {
+.logo,
+.menu {
   margin-top: 5%; }
-  .menu .menu__item, .logo .menu__item {
-    display: inline-block;
-    margin-left: 5%; }
-    .menu .menu__item .menu__item--estilo, .logo .menu__item .menu__item--estilo {
-      text-decoration: none;
-      color: #fff;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
+.menu__item--estilo,
+.social__icono--estilo {
+  text-decoration: none; }
+
+.menu__item--color,
+.social__icono--color {
+  color: #fff;
+  font-size: 100px; }
+
+.menu__item,
+.social {
+  margin-left: 5%;
+  display: inline-block; }
+
+#contacto {
+  background-image: url("../assets/img/img-divider.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  height: 300px;
+  text-align: center; }
 
 #portada {
   height: 80vh;
   background-image: url("../assets/img/carousel-bg.jpg");
   background-size: cover; }
-
-
 
 /*# sourceMappingURL=style.css.map */
