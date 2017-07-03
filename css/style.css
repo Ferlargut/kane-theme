@@ -8,7 +8,6 @@
   max-width: 1200px;
   margin: 0px auto; }
 
-
 .templateRow, .row:before, .row:after {
   content: " ";
   display: table; }
@@ -98,7 +97,6 @@
 .col-offset-12 {
   margin-left: 100%; }
 
-
 body,
 html {
   width: 100%;
@@ -118,12 +116,9 @@ html {
       color: #fff;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-
 #portada {
   height: 80vh;
   background-image: url("../assets/img/carousel-bg.jpg");
   background-size: cover; }
-
-
 
 /*# sourceMappingURL=style.css.map */
