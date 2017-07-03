@@ -1,9 +1,3 @@
-
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"  color\": expected \";\", was \": $font-light;\"\A         on line 399 of scss/style.scss\A \A 394: \A 395: \A 396: //Team style\A 397: .team__container{\A 398:   background: $color-green\A 399:   color: $font-light;\A 400:   padding: 50px 0;\A 401: }\A 402: \A 403: \A 404: //FORM//"; }
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -422,6 +416,21 @@ html {
   .services__button__title {
     font-size: 25px; }
 
+.team__container {
+  background: #27ad60;
+  color: #fff;
+  padding: 50px 0; }
+
+.team__items {
+  margin-left: 10%; }
+
+.team__p--margin {
+  margin-bottom: 50px; }
+
+.team__text--style {
+  font-size: 12px;
+  line-height: 1.42; }
+
 .form__title {
   font-size: 25px; }
 .form__container {
@@ -455,4 +464,3 @@ hr {
 /*fin nancy*/
 
 /*# sourceMappingURL=style.css.map */
-

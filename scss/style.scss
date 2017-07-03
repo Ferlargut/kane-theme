@@ -401,7 +401,6 @@ html {
   line-height: 1.42;
 }
 .services__button{
-
   font-family: $font-principal;
   font-weight: 200;
   color: $font-light;
@@ -417,6 +416,16 @@ html {
   background: $color-green;
   color: $font-light;
   padding: 50px 0;
+}
+.team__items{
+  margin-left: 10%;
+}
+.team__p--margin{
+    margin-bottom: 50px;
+}
+.team__text--style{
+  font-size: $size-text;
+  line-height: 1.42;
 }
 
 
