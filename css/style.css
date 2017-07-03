@@ -97,6 +97,11 @@
 .col-offset-12 {
   margin-left: 100%; }
 
+#portada {
+  height: 80vh;
+  background-image: url("../assets/img/carousel-bg.jpg");
+  background-size: cover; }
+
 .form__container {
   background: #2c3e50;
   color: #fff; }
@@ -113,5 +118,12 @@
 
 .center {
   text-align: center; }
+
+.hr {
+  border: 0;
+  border-top: 1px solid #fff;
+  margin: 20px 0;
+  height: 5px;
+  width: 10%; }
 
 /*# sourceMappingURL=style.css.map */

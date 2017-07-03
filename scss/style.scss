@@ -1,6 +1,17 @@
 @import'grid';
 @import'variables';
 
+
+
+// Estilos PORTADA
+#portada{
+	height:80vh;
+	background-image: url("../assets/img/carousel-bg.jpg");
+	background-size: cover;
+}
+// Fin estilos PORTADA
+
+
 //Titulos//
 
 //FORM//
@@ -20,4 +31,11 @@
 }
 .center{
     text-align: center;
+}
+.hr{
+    border: 0;
+    border-top: 1px solid $font-ligth;
+    margin: 20px 0;
+    height: 5px;
+    width: 10%;
 }
