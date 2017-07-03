@@ -188,13 +188,8 @@ html {
     cursor: pointer;
   }
 
-  .menu__item--color,
-  .social__icono--color {
-    color: $font-light;
-    font-size: 100px;
-
-  }
 }
+
 .contenedor-social {
   margin-top: 10%;
 }
@@ -225,16 +220,29 @@ html {
   color: $font-light;
   text-align: center;
 
-  .contacto__item {
+  .contact {
     margin-top: 3%;
 
     span{
       border-bottom: 1px solid $font-light;
       padding-bottom: 5%;
     }
-    .contacto__item--list {
+
+
+    .contacto__list {
       margin-top: 15%;
       font-size: 14px;
+      list-style: none;
+
+      .contacto__list--item{
+        margin-top: 5%;
+
+        .contacto__list--icono {
+          text-decoration: none;
+          color: $font-light;
+        }
+      }
+
     }
   }
 }
@@ -286,8 +294,7 @@ html {
 }
 .contenedorPrecio{
   border: solid 1px $color-green;
-    .contenedorPrecio__item{
-
+  .contenedorPrecio__item{
       .contenedorPrecio__item--tituloPrecio{
         @include titulos-precios($font-precios,$font-precio-color,$size-text);
         padding-top:10px;
@@ -322,23 +329,30 @@ html {
 }
 
 //FORM//
-.form__container{
-    background: $color-blue;
-    color: $font-light;
-    padding: 50px 0;
-}
-.form__items{
-    display: block;
-    margin-top: 15px;
-}
-.form__button{
-    border: none;
-    padding: 2%;
-    background: $color-button;
-    color: $font-light;
-}
-.form__p--margin{
-    margin-bottom: 50px;
+.form{
+    &__title{
+        font-size: $size-title;
+    }
+   &__container{
+        background: $color-blue;
+        color: $font-light;
+        padding: 50px 0;
+    }
+    &__items{
+        display: block;
+        margin-top: 15px;
+    }
+    &__button{
+        border: none;
+        padding: 2%;
+        background: $color-button;
+        color: $font-light;
+    }
+    &__p{
+        &--margin{
+            margin-bottom: 50px;
+        }
+    }
 }
 
 //Common//
