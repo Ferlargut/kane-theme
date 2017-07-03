@@ -97,11 +97,35 @@
 .col-offset-12 {
   margin-left: 100%; }
 
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-#portada {
-  height: 80vh;
+.portada {
+  height: 60vh;
   background-image: url("../assets/img/carousel-bg.jpg");
-  background-size: cover; }
+  background-size: cover;
+  text-align: center;
+  color: #fff; }
+  .portada .portada__titulo--padTop {
+    padding-top: 5%; }
+  .portada .portada__texto--padTop {
+    padding-top: 15%; }
+  .portada .portada__texto--weight {
+    font-weight: 500; }
 
+.palette {
+  text-align: center; }
+  .palette .palette__titulo--padTop {
+    padding-top: 10%; }
+  .palette .palette__linea {
+    width: 16.6%;
+    margin-left: 42%; }
+  .palette .palette__linea--color {
+    color: #c1c1c1; }
+
+.colores .colores--selector {
+  border: 1px solid black;
+  height: 80px;
+  margin-top: 2%; }
 
 /*# sourceMappingURL=style.css.map */
