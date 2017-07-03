@@ -1,6 +1,28 @@
 @import'grid';
 @import'variables';
 
+// Estilos generales
+body{
+	font-family: $font-principal;
+}
+
+// Estilos PORTADA
+.portada{
+	height:60vh;
+	background-image: url("../assets/img/carousel-bg.jpg");
+	background-size: cover;
+	text-align: center;
+	color: $font-ligth;
+	.portada__titulo--padTop{
+		padding-top: 5%;
+	}
+	.portada__texto--padTop{
+		padding-top: 15%;
+	}
+	.portada__texto--weight{
+		font-weight: 500;
+	}
+
 // incia ABOUT
 .about{
   font-family: $font-principal;
@@ -19,11 +41,6 @@
   width: 75%;
 }
 // final ABOUT
-/*seccion nancy*/
-.contenedor-precio {
-  border: solid 1px $color-green;
-}
-/*fin nancy*/
 body,
 html {
   width: 100%;
@@ -75,13 +92,33 @@ html {
     }
 }
 // Fin fer
+kground-size: cover;
+}
 
 
-// Estilos PORTADA
-#portada {
-  height: 80vh;
-  background-image: url("../assets/img/carousel-bg.jpg");
-  background-size: cover;
+.palette{
+	text-align: center;
+	.palette__titulo--padTop{
+		padding-top: 10%;
+	}
+	.palette__linea{
+		width: 16.6%;
+		margin-left: 42%;
+	}
+	.palette__linea--color{
+		color: $font-grey;
+	}
+
+}
+
+.colores{
+	// border: 1px solid green;
+	.colores--selector{
+		border: 1px solid black;
+		height: 80px;
+		margin-top: 2%;
+	}
+
 }
 // Fin estilos PORTADA
 
@@ -148,3 +185,4 @@ hr{
 }
 
 /*fin nancy*/
+
