@@ -97,6 +97,11 @@
 .col-offset-12 {
   margin-left: 100%; }
 
+/*seccion nancy*/
+.contenedor-precio {
+  border: solid 1px #27ad60; }
+
+/*fin nancy*/
 body,
 html {
   width: 100%;
