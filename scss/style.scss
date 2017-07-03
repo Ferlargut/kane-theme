@@ -1,7 +1,31 @@
 @import'grid';
 @import'variables';
 
+// Estilos generales
+body,
+html {
+  width: 100%;
+  padding: 0;
+  font-family: $font-principal;
+}
+// Estilos PORTADA
+.portada{
+	height:60vh;
+	background-image: url("../assets/img/carousel-bg.jpg");
+	background-size: cover;
+	text-align: center;
+	color: $font-light;
 
+	.portada__titulo--padTop{
+		padding-top: 5%;
+	}
+	.portada__texto--padTop{
+		padding-top: 15%;
+	}
+	.portada__texto--weight{
+		font-weight: 500;
+	}
+}
 // incia ABOUT
 .about{
   font-family: $font-principal;
@@ -38,70 +62,184 @@
   box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
 }
 // final ABOUT
-/*seccion nancy*/
-.contenedor-precio {
-  border: solid 1px $color-green;
-}
-/*fin nancy*/
-body,
-html {
-  width: 100%;
-  padding: 0;
-  font-family: $font-principal;
-}
+
 /*seccion angie*/
 .navegador {
   background: $color-green;
   height: 130px;
 }
 
-.logo,
-.menu {
+.logo {
   margin-top: 5%;
 }
 
-.menu__item--estilo,
-.social__icono--estilo {
-  text-decoration: none;
-}
-
-.menu__item--color,
-.social__icono--color {
-  color: $font-light;
-  font-size: 100px;
-}
-
-
-.menu__item,
-.social {
+.menu {
+  margin-top: 5%;
   margin-left: 5%;
   display: inline-block;
+
+  .menu__item {
+    text-decoration: none;
+    color: $font-light;
+    cursor: pointer;
+  }
+
+  .menu__item--color,
+  .social__icono--color {
+    color: $font-light;
+    font-size: 100px;
+
+  }
+}
+.contenedor-social {
+  margin-top: 10%;
 }
 
-#contacto {
+.social {
+  font-size: 90px;
+  display: inline-block;
+  margin-left: 3%;
+
+  .social__icono{
+    color: $font-light;
+    cursor: pointer;
+  }
+}
+
+#redes-sociales {
   background-image: url('../assets/img/img-divider.jpg');
+  height: 392px;
+  max-width: 100%;
+  background-position: bottom;
   background-size: cover;
-  background-repeat: repeat;
-  height: 300px;
+  background-repeat: round;
   text-align: center;
 }
 
+#contacto {
+  background: $color-green;
+  color: $font-light;
+  text-align: center;
+
+  .contacto__item {
+    margin-top: 3%;
+
+    span{
+      border-bottom: 1px solid $font-light;
+      padding-bottom: 5%;
+    }
+    .contacto__item--list {
+      margin-top: 15%;
+      font-size: 14px;
+    }
+  }
+}
 // Estilos fer
 .clients-say{
     background-color: $color-blue;
+    .clients-say_item{
+        text-align: center;
+        color: $font-light;
+    }
 }
 // Fin fer
 
+.palette{
+	text-align: center;
+	.palette__titulo--padTop{
+		padding-top: 10%;
+	}
+	.palette__linea{
+		width: 16.6%;
+		margin-left: 42%;
+	}
+	.palette__linea--color{
+		color: $font-grey;
+	}
 
-// Estilos PORTADA
-#portada {
-  height: 80vh;
-  background-image: url("../assets/img/carousel-bg.jpg");
-  background-size: cover;
+}
+
+.colores{
+	// border: 1px solid green;
+	.colores--selector{
+		border: 1px solid black;
+		height: 80px;
+		margin-top: 2%;
+	}
+
 }
 // Fin estilos PORTADA
 
+/*seccion nancy*/
+@mixin titulos-precios($font-principal,$font-precio-color,$size-text){
+    font-family: $font-principal;
+    color: $font-precio-color;
+    font-size: $size-text;
+}
+@mixin titulo-bestP($font-principal,$font-light,$size-cita){
+    font-family: $font-principal;
+    color: $font-light;
+    font-size: $size-cita;
+}
+
+.texto-centrado{
+  text-align: center;
+}
+.padding-precios{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#titulo-bestprice{
+  @include titulo-bestP($font-principal,$font-light,$size-bestP);
+  margin-top: 50px;
+}
+#linea-precios{
+  border-top:solid 1px $font-light;
+  width: 200px;
+  margin-top: 15px;
+}
+#best-price{
+  background-color: $color-blue;
+}
+#subtitulo-bestprice{
+  @extend #titulo-bestprice;
+  font-size: $size-text-blanco;
+  margin-top: 0;
+}
+.contenedorPrecio{
+  border: solid 1px $color-green;
+  .contenedorPrecio__item{
+
+    .contenedorPrecio__item--tituloPrecio{
+      @include titulos-precios($font-precios,$font-precio-color,$size-text);
+    } 
+    
+  }
+}
+/*fin nancy*/
+
 //Titulos//
+
+
+// What we Do style
+.services{
+  background-color: $color-green;
+  font-family: $font-principal;
+  font-weight: 200;
+  color: $font-ligth;
+  text-align: center;
+  &__title{
+    font-size: $size-title;
+  }
+  &__hr{
+    width: 10%;
+    height: 5px;
+    background-color: $font-ligth;
+    margin: 10px;
+    border: none;
+    border-style: none;
+  }
+}
 
 //FORM//
 .form__container{

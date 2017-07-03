@@ -97,6 +97,25 @@
 .col-offset-12 {
   margin-left: 100%; }
 
+body,
+html {
+  width: 100%;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.portada {
+  height: 60vh;
+  background-image: url("../assets/img/carousel-bg.jpg");
+  background-size: cover;
+  text-align: center;
+  color: #fff; }
+  .portada .portada__titulo--padTop {
+    padding-top: 5%; }
+  .portada .portada__texto--padTop {
+    padding-top: 15%; }
+  .portada .portada__texto--weight {
+    font-weight: 500; }
+
 .about {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #2c3e50; }
@@ -114,6 +133,7 @@
 
 .about_img-size {
   width: 75%; }
+
 
 .bars {
   padding-right: 5%; }
@@ -134,52 +154,142 @@
 /*seccion nancy*/
 .contenedor-precio {
   border: solid 1px #27ad60; }
-
 /*fin nancy*/
-body,
-html {
-  width: 100%;
-  padding: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 /*seccion angie*/
 .navegador {
   background: #27ad60;
   height: 130px; }
 
-.logo,
-.menu {
+.logo {
   margin-top: 5%; }
 
-.menu__item--estilo,
-.social__icono--estilo {
-  text-decoration: none; }
+  .menu .menu__item, .logo .menu__item {
+    display: inline-block;
+    margin-left: 5%; }
+    .menu .menu__item .menu__item--estilo, .logo .menu__item .menu__item--estilo {
+      text-decoration: none;
+      color: #fff;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-.menu__item--color,
-.social__icono--color {
+.services {
+  background-color: #27ad60;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
   color: #fff;
-  font-size: 100px; }
+  text-align: center; }
+  .services__title {
+    font-size: 25px; }
+  .services__hr {
+    width: 10%;
+    height: 5px;
+    background-color: #fff;
+    margin: 10px;
+    border: none;
+    border-style: none; }
 
-.menu__item,
-.social {
+
+.menu {
+  margin-top: 5%;
   margin-left: 5%;
   display: inline-block; }
+  .menu .menu__item {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer; }
+  .menu .menu__item--color,
+  .menu .social__icono--color {
+    color: #fff;
+    font-size: 100px; }
+
+.contenedor-social {
+  margin-top: 10%; }
+
+.social {
+  font-size: 90px;
+  display: inline-block;
+  margin-left: 3%; }
+  .social .social__icono {
+    color: #fff;
+    cursor: pointer; }
+
+#redes-sociales {
+  background-image: url("../assets/img/img-divider.jpg");
+  height: 392px;
+  max-width: 100%;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: round;
+  text-align: center; }
 
 #contacto {
-  background-image: url("../assets/img/img-divider.jpg");
-  background-size: cover;
-  background-repeat: repeat;
-  height: 300px;
+  background: #27ad60;
+  color: #fff;
   text-align: center; }
+  #contacto .contacto__item {
+    margin-top: 3%; }
+    #contacto .contacto__item span {
+      border-bottom: 1px solid #fff;
+      padding-bottom: 5%; }
+    #contacto .contacto__item .contacto__item--list {
+      margin-top: 15%;
+      font-size: 14px; }
 
 .clients-say {
   background-color: #2c3e50; }
+  .clients-say .clients-say_item {
+    text-align: center;
+    color: #fff; }
 
-#portada {
-  height: 80vh;
-  background-image: url("../assets/img/carousel-bg.jpg");
-  background-size: cover; }
+.palette {
+  text-align: center; }
+  .palette .palette__titulo--padTop {
+    padding-top: 10%; }
+  .palette .palette__linea {
+    width: 16.6%;
+    margin-left: 42%; }
+  .palette .palette__linea--color {
+    color: #c1c1c1; }
 
+.colores .colores--selector {
+  border: 1px solid black;
+  height: 80px;
+  margin-top: 2%; }
+
+/*seccion nancy*/
+.texto-centrado {
+  text-align: center; }
+
+.padding-precios {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+#titulo-bestprice, #subtitulo-bestprice {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+  font-size: 40px;
+  margin-top: 50px; }
+
+#linea-precios {
+  border-top: solid 1px #fff;
+  width: 200px;
+  margin-top: 15px; }
+
+#best-price {
+  background-color: #2c3e50; }
+
+#subtitulo-bestprice {
+  font-size: 10px;
+  margin-top: 0; }
+
+.contenedorPrecio {
+  border: solid 1px #27ad60; }
+  .contenedorPrecio .contenedorPrecio__item .contenedorPrecio__item--tituloPrecio {
+    font-family: "inherit", monospace;
+    color: #f5f5f5;
+    font-size: 12px; }
+
+/*fin nancy*/
 .form__container {
   background: #2c3e50;
   color: #fff;
