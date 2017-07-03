@@ -1,3 +1,4 @@
+
 @import 'grid';
 @import 'variables';
 
@@ -26,3 +27,13 @@ html {
     }
   }
 }
+
+// Estilos PORTADA
+#portada{
+	height:80vh;
+	background-image: url("../assets/img/carousel-bg.jpg");
+	background-size: cover;
+}
+// Fin estilos PORTADA
+
+
