@@ -357,6 +357,15 @@ html {
 
   }
 }
+.botones-precio{
+  margin-top: 50px;
+  .boton-precio{
+    padding:10px;
+    background-color:$color-button;
+    border:$color-button;
+    color: $font-light;
+  }
+}
 // fin del segundo for
 /*fin nancy*/
 
