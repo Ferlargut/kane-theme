@@ -67,13 +67,13 @@ html {
     cursor: pointer;
   }
 
-.menu__item--color,
-.social__icono--color {
-  color: $font-light;
-  font-size: 100px;
+  .menu__item--color,
+  .social__icono--color {
+    color: $font-light;
+    font-size: 100px;
 
+  }
 }
-
 .contenedor-social {
   margin-top: 10%;
 }
@@ -159,25 +159,48 @@ html {
     color: $font-precio-color;
     font-size: $size-text;
 }
+@mixin titulo-bestP($font-principal,$font-light,$size-cita){
+    font-family: $font-principal;
+    color: $font-light;
+    font-size: $size-cita;
+}
+
 .texto-centrado{
   text-align: center;
 }
+.padding-precios{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#titulo-bestprice{
+  @include titulo-bestP($font-principal,$font-light,$size-bestP);
+  margin-top: 50px;
+}
+#linea-precios{
+  border-top:solid 1px $font-light;
+  width: 200px;
+  margin-top: 15px;
+}
 #best-price{
-  background-color:$color-blue;
+  background-color: $color-blue;
+}
+#subtitulo-bestprice{
+  @extend #titulo-bestprice;
+  font-size: $size-text-blanco;
+  margin-top: 0;
 }
 .contenedorPrecio{
   border: solid 1px $color-green;
+  .contenedorPrecio__item{
 
-    .contenedorPrecio__item{
-
-      .contenedorPrecio__item--tituloPrecio{
-        @include titulos-precios($font-precios,$font-precio-color,$size-text);
-        padding-top:10px;
-        padding-bottom:10px;
-      } 
-      
-    }
+    .contenedorPrecio__item--tituloPrecio{
+      @include titulos-precios($font-precios,$font-precio-color,$size-text);
+    } 
+    
+  }
 }
+/*fin nancy*/
+
 //Titulos//
 
 //FORM//
@@ -214,4 +237,3 @@ hr{
     border-bottom: 1px solid $font-light;
     height: 5px;
 }
-
