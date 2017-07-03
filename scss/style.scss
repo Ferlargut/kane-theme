@@ -91,8 +91,18 @@ html {
     color: $font-precio-color;
     font-size: $size-text;
 }
+@mixin titulo-bestP($font-principal,$font-light,$size-cita){
+    font-family: $font-principal;
+    color: $font-light;
+    font-size: $size-cita;
+}
 .texto-centrado{
   text-align: center;
+}
+#titulo-bestprice{
+  @include titulo-bestP($font-principal,$font-light,$size-bestP);
+  padding-top:10px;
+  padding-bottom:10px;
 }
 #best-price{
   background-color:$color-blue;
@@ -110,6 +120,8 @@ html {
       
     }
 }
+/*fin nancy*/
+
 //Titulos//
 
 //FORM//
@@ -147,4 +159,4 @@ hr{
     height: 5px;
 }
 
-/*fin nancy*/
+
