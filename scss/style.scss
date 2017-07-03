@@ -88,6 +88,9 @@ html {
     .clients-say_item{
         text-align: center;
         color: $font-light;
+        .clients-say_item--cita{
+            color: $color-orange;
+        }
     }
 }
 // Fin fer

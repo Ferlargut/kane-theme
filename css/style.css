@@ -167,6 +167,8 @@ html {
   .clients-say .clients-say_item {
     text-align: center;
     color: #fff; }
+    .clients-say .clients-say_item .clients-say_item--cita {
+      color: #e67e22; }
 
 .palette {
   text-align: center; }
