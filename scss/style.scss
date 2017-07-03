@@ -1,6 +1,41 @@
 @import'grid';
 @import'variables';
 
+/*seccion nancy*/
+.contenedor-precio{
+	border: solid 1px $color-green;
+}
+/*fin nancy*/
+
+
+@import 'grid';
+@import 'variables';
+
+body,
+html {
+  width: 100%;
+  padding: 0;
+}
+
+.navegador {
+  background: $color-green;
+  height: 130px;
+}
+
+.menu , .logo{
+  margin-top: 5%;
+
+  .menu__item {
+    display: inline-block;
+    margin-left: 5%;
+
+    .menu__item--estilo {
+      text-decoration: none;
+      color: $font-light;
+      font-family: $font-principal;
+    }
+  }
+}
 
 
 // Estilos PORTADA
@@ -17,25 +52,34 @@
 //FORM//
 .form__container{
     background: $color-blue;
-    color: $font-ligth;
+    color: $font-light;
+    padding: 50px 0;
 }
 .form__items{
     display: block;
-    margin-bottom: 15px;
+    margin-top: 15px;
 }
 .form__button{
     border: none;
     padding: 2%;
     background: $color-button;
-    color: $font-ligth;
+    color: $font-light;
 }
+.form__p--margin{
+    margin-bottom: 50px;
+}
+
+//Common//
 .center{
     text-align: center;
 }
-.hr{
-    border: 0;
-    border-top: 1px solid $font-ligth;
+hr{       
     margin: 20px 0;
+    box-sizing: content-box;
+}
+.hr{
+    width: 15%; 
+    border: 0;
+    border-bottom: 1px solid $font-light;
     height: 5px;
-    width: 10%;
 }
