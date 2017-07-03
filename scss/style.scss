@@ -33,15 +33,33 @@ html {
 }
 .about__title{
   text-align: center;
+  font-size: 3.5em;
 }
 .about__paragraph{
   font-size: $size-text;
 }
 .about__title-color, .about__paragraph-color{
   color: $font-light;
+  line-height: 1.5em;
 }
 .about_img-size{
   width: 75%;
+}
+.bars{
+  padding-right: 5%;
+}
+.progress{
+  height: 10px;
+  margin: 20px 0 0 0;
+  background-color: #f5f5f5;
+  box-shadow:inset 0 1px 2px rgba(0,0,0,.1);
+  padding: 2px;
+}
+.progress-bar{
+  float: left;
+  height: 100%;
+  background-color:$color-orange;
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,.15);
 }
 // final ABOUT
 
@@ -60,20 +78,14 @@ html {
   margin-left: 5%;
   display: inline-block;
 
-
   .menu__item {
     text-decoration: none;
     color: $font-light;
     cursor: pointer;
   }
 
-  .menu__item--color,
-  .social__icono--color {
-    color: $font-light;
-    font-size: 100px;
-
-  }
 }
+
 .contenedor-social {
   margin-top: 10%;
 }
@@ -104,16 +116,29 @@ html {
   color: $font-light;
   text-align: center;
 
-  .contacto__item {
+  .contact {
     margin-top: 3%;
 
     span{
       border-bottom: 1px solid $font-light;
       padding-bottom: 5%;
     }
-    .contacto__item--list {
+
+
+    .contacto__list {
       margin-top: 15%;
       font-size: 14px;
+      list-style: none;
+
+      .contacto__list--item{
+        margin-top: 5%;
+
+        .contacto__list--icono {
+          text-decoration: none;
+          color: $font-light;
+        }
+      }
+
     }
   }
 }
@@ -198,11 +223,21 @@ html {
 .contenedorPrecio{
   border: solid 1px $color-green;
   .contenedorPrecio__item{
+<<<<<<< HEAD
     .contenedorPrecio__item--tituloPrecio{
       @include titulos-precios($font-precios,$font-precio-color,$size-text);
     } 
     
   }
+=======
+      .contenedorPrecio__item--tituloPrecio{
+        @include titulos-precios($font-precios,$font-precio-color,$size-text);
+        padding-top:10px;
+        padding-bottom:10px;
+      }
+
+    }
+>>>>>>> upstream/master
 }
 /*for para las segunda fila*/
 @for $i from 1 through 4 {
@@ -216,24 +251,52 @@ html {
 
 //Titulos//
 
-//FORM//
-.form__container{
-    background: $color-blue;
-    color: $font-light;
-    padding: 50px 0;
-}
-.form__items{
-    display: block;
-    margin-top: 15px;
-}
-.form__button{
+
+// What we Do style
+.services{
+  background-color: $color-green;
+  font-family: $font-principal;
+  font-weight: 200;
+  color: $font-light;
+  text-align: center;
+  &__title{
+    font-size: $size-title;
+  }
+  &__hr{
+    width: 10%;
+    height: 5px;
+    background-color: $font-light;
+    margin: 10px;
     border: none;
-    padding: 2%;
-    background: $color-button;
-    color: $font-light;
+    border-style: none;
+  }
 }
-.form__p--margin{
-    margin-bottom: 50px;
+
+//FORM//
+.form{
+    &__title{
+        font-size: $size-title;
+    }
+   &__container{
+        background: $color-blue;
+        color: $font-light;
+        padding: 50px 0;
+    } 
+    &__items{
+        display: block;
+        margin-top: 15px;
+    }
+    &__button{
+        border: none;
+        padding: 2%;
+        background: $color-button;
+        color: $font-light;
+    }
+    &__p{
+        &--margin{
+            margin-bottom: 50px;
+        }  
+    }
 }
 
 //Common//
