@@ -217,10 +217,6 @@ html {
 .contenedorPrecio{
   border: solid 1px $color-green;
   .contenedorPrecio__item{
-
-
-    .contenedorPrecio__item{
-
       .contenedorPrecio__item--tituloPrecio{
         @include titulos-precios($font-precios,$font-precio-color,$size-text);
         padding-top:10px;
@@ -228,7 +224,6 @@ html {
       }
 
     }
-
 }
 /*fin nancy*/
 
@@ -240,7 +235,7 @@ html {
   background-color: $color-green;
   font-family: $font-principal;
   font-weight: 200;
-  color: $font-ligth;
+  color: $font-light;
   text-align: center;
   &__title{
     font-size: $size-title;
@@ -248,7 +243,7 @@ html {
   &__hr{
     width: 10%;
     height: 5px;
-    background-color: $font-ligth;
+    background-color: $font-light;
     margin: 10px;
     border: none;
     border-style: none;
@@ -256,23 +251,30 @@ html {
 }
 
 //FORM//
-.form__container{
-    background: $color-blue;
-    color: $font-light;
-    padding: 50px 0;
-}
-.form__items{
-    display: block;
-    margin-top: 15px;
-}
-.form__button{
-    border: none;
-    padding: 2%;
-    background: $color-button;
-    color: $font-light;
-}
-.form__p--margin{
-    margin-bottom: 50px;
+.form{
+    &__title{
+        font-size: $size-title;
+    }
+   &__container{
+        background: $color-blue;
+        color: $font-light;
+        padding: 50px 0;
+    } 
+    &__items{
+        display: block;
+        margin-top: 15px;
+    }
+    &__button{
+        border: none;
+        padding: 2%;
+        background: $color-button;
+        color: $font-light;
+    }
+    &__p{
+        &--margin{
+            margin-bottom: 50px;
+        }  
+    }
 }
 
 //Common//

@@ -134,7 +134,6 @@ html {
 .about_img-size {
   width: 75%; }
 
-
 .bars {
   padding-right: 5%; }
 
@@ -151,11 +150,6 @@ html {
   background-color: #e67e22;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15); }
 
-/*seccion nancy*/
-.contenedor-precio {
-  border: solid 1px #27ad60; }
-/*fin nancy*/
-
 /*seccion angie*/
 .navegador {
   background: #27ad60;
@@ -163,30 +157,6 @@ html {
 
 .logo {
   margin-top: 5%; }
-
-  .menu .menu__item, .logo .menu__item {
-    display: inline-block;
-    margin-left: 5%; }
-    .menu .menu__item .menu__item--estilo, .logo .menu__item .menu__item--estilo {
-      text-decoration: none;
-      color: #fff;
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.services {
-  background-color: #27ad60;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 200;
-  color: #fff;
-  text-align: center; }
-  .services__title {
-    font-size: 25px; }
-  .services__hr {
-    width: 10%;
-    height: 5px;
-    background-color: #fff;
-    margin: 10px;
-    border: none;
-    border-style: none; }
 
 .menu {
   margin-top: 5%;
@@ -196,10 +166,6 @@ html {
     text-decoration: none;
     color: #fff;
     cursor: pointer; }
-  .menu .menu__item--color,
-  .menu .social__icono--color {
-    color: #fff;
-    font-size: 100px; }
 
 .contenedor-social {
   margin-top: 10%; }
@@ -296,22 +262,37 @@ html {
     padding-top: 10px;
     padding-bottom: 10px; }
 
+/*fin nancy*/
+.services {
+  background-color: #27ad60;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  color: #fff;
+  text-align: center; }
+  .services__title {
+    font-size: 25px; }
+  .services__hr {
+    width: 10%;
+    height: 5px;
+    background-color: #fff;
+    margin: 10px;
+    border: none;
+    border-style: none; }
 
+.form__title {
+  font-size: 25px; }
 .form__container {
   background: #2c3e50;
   color: #fff;
   padding: 50px 0; }
-
 .form__items {
   display: block;
   margin-top: 15px; }
-
 .form__button {
   border: none;
   padding: 2%;
   background: #453f45;
   color: #fff; }
-
 .form__p--margin {
   margin-bottom: 50px; }
 
