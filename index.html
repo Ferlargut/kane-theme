@@ -32,15 +32,63 @@
   </nav>
     <!--Parte Angie-->
     <!--Parte inti-->
-	<section id="portada">
-		<h2 class="row"> BEAUTIFUL COLOR PALLETTES
+	<section class="portada">
+		<h2 class="row portada__titulo--padTop"> BEAUTIFUL COLOR PALLETTES
 			FOR YOUR NEXT WEB PROJECT</h2>
-		<h4 class="row">
+		<h4 class="col-offset-1 col-10 portada__texto--padTop portada__texto--weight">
 			Choosing the right scheme is essential to your websites success.
 			Your layout and other design choices - including font - should be
 			developed in concert with your color scheme to ensure readability,
 			cohesiveness and beauty in the final product.
 		</h4>
+	</section>
+
+	<section class="palette">
+		<h2 class="row palette__titulo--padTop"> PICK YOUR COLOR PALETTE</h2>
+		<hr style="align=center" class=" palette__linea palette__linea--color">
+		<!-- paleta de colores -->
+		<section class="container colores">
+			<!-- Fila 1  -->
+			<div class="row">
+				<span class="colores--selector col-offset-1 col-2"></span>
+				<span class="colores--selector col-2"></span>
+				<span class="colores--selector col-2"></span>
+				<span class="colores--selector col-2"></span>
+				<span class="colores--selector col-2"></span>
+			</div>
+			<!-- Fila 2 -->
+			<div class="row">
+				<span class="colores--selector col-offset-1 col-2"></span>
+				<span class="colores--selector col-2"></span>
+				<span class="colores--selector col-2"></span>
+				<span class="colores--selector col-2"></span>
+				<span class="colores--selector col-2"></span>
+			</div>
+			<!-- Fila 3 -->
+			<div class="row">
+				<span class="colores--selector col-offset-1 col-2"></span>
+				<span class="colores--selector col-2"></span>
+				<span class="colores--selector col-2"></span>
+				<span class="colores--selector col-2"></span>
+				<span class="colores--selector col-2"></span>
+			</div>
+			<!-- Fila 4 -->
+			<div class="row">
+				<span class="colores--selector col-offset-1 col-2"></span>
+				<span class="colores--selector col-2"></span>
+				<span class="colores--selector col-2"></span>
+				<span class="colores--selector col-2"></span>
+				<span class="colores--selector col-2"></span>
+			</div>
+			<!-- Fila 5 -->
+			<div class="row">
+				<span class="colores--selector col-offset-1 col-2"></span>
+				<span class="colores--selector col-2"></span>
+				<span class="colores--selector col-2"></span>
+				<span class="colores--selector col-2"></span>
+				<span class="colores--selector col-2"></span>
+			</div>
+		</section>
 	</section>
     <!--Parte Kary-->
     <section class="about">
@@ -166,6 +214,54 @@
             <a href="#"><img src="" alt=""></a>
           </div>
         </div>
+
+        <div class="col-3">
+          <img src="assets/img/team/1.jpg" alt="Jane Do">
+          <div>
+            <h5>Jane Do</h5>
+            <p>CEO/Founder</p>
+          </div>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Itaque accusantium, libero illo, aut facilis repudiandae.
+            Aut, molestias, voluptate! Excepturi asperiores adipisci vitae,
+            debitis ad totam. Illum esse possimus veritatis ducimus.</p>
+          <div>
+            <a href="#"><img src="" alt=""></a>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <img src="assets/img/team/1.jpg" alt="Jane Do">
+          <div>
+            <h5>Jane Do</h5>
+            <p>CEO/Founder</p>
+          </div>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Itaque accusantium, libero illo, aut facilis repudiandae.
+            Aut, molestias, voluptate! Excepturi asperiores adipisci vitae,
+            debitis ad totam. Illum esse possimus veritatis ducimus.</p>
+          <div>
+            <a href="#"><img src="" alt=""></a>
+          </div>
+        </div>
+
+        <div class="col-3">
+          <img src="assets/img/team/1.jpg" alt="Jane Do">
+          <div>
+            <h5>Jane Do</h5>
+            <p>CEO/Founder</p>
+          </div>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Itaque accusantium, libero illo, aut facilis repudiandae.
+            Aut, molestias, voluptate! Excepturi asperiores adipisci vitae,
+            debitis ad totam. Illum esse possimus veritatis ducimus.</p>
+          <div>
+            <a href="#"><img src="" alt=""></a>
+          </div>
+        </div>
       </div>
     </section>
     <!--End Section Awesome Team-->
@@ -173,12 +269,14 @@
     <!--Parte Zitle-->
     <section id="best-price" class="container">
         <div class="row">
-            <!-- texto -->
-        </div>
-        <div class="row">
             <div class="col-3">
-                <div class="contenedor-precio">
-                    hola
+                <div class="contenedorPrecio texto-centrado">
+                    <div class="row contenedorPrecio__item">
+                        <h5 class="contenedorPrecio__item--tituloPrecio">STARTER</h5>
+                    </div>
+                    <div>
+                        
+                    </div>
                 </div>
             </div>
             <div class="col-3"></div>
@@ -195,15 +293,22 @@
             <pclass="col-12">Donec sed odio dui. Etiam porta sem malesuada madna mollis euismod</p>
         </article>
         <article  class="row clients-say_item">
-            <p class="col-12 clients-say_item--parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet omnis odio fugiat minima, saepe! Sed quo accusantium expedita eligendi, quidem cum doloremque recusandae est explicabo! Cumque quisquam magni explicabo quae!</p>
+            <p class="col-offset-4 col-4 clients-say_item--parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 Eveniet omnis odio fugiat minima, saepe! Sed quo accusantium expedita eligendi,
+                 quidem cum doloremque recusandae est explicabo! Cumque quisquam magni explicabo quae!
+                 </p>
             <p class="col-12 clients-say_item--cita">-Automotive Company</p>
         </article>
         <article  class="row clients-say_item">
-            <p class="col-12 clients-say_item--parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia natus porro tenetur placeat laudantium soluta neque ipsam, eius illo, at quidem, error. Itaque, laborum, possimus! Alias, voluptates doloremque natus doloribus.</p>
+            <p class="col-offset-4 col-4 clients-say_item--parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Officia natus porro tenetur placeat laudantium soluta neque ipsam, eius illo, at quidem, error. Itaque, 
+                laborum, possimus! Alias, voluptates doloremque natus doloribus.</p>
             <p class="col-12 clients-say_item--cita">-Xpedius Aerospace</p>
         </article>
         <article  class="row clients-say_item">
-            <p class="col-12 clients-say_item--parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, minima provident laudantium, autem atque iure sapiente voluptatibus ad laborum, dolore, quos dolorem et nobis modi doloremque numquam nulla reprehenderit tempore.</p>
+            <p class="col-offset-4 col-4 clients-say_item--parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Consectetur, minima provident laudantium, autem atque iure sapiente voluptatibus ad laborum, dolore,
+                 quos dolorem et nobis modi doloremque numquam nulla reprehenderit tempore.</p>
             <p class="col-12 clients-say_item--cita">-CKPit Solution</p>
         </article>
     </section>
