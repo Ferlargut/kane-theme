@@ -51,11 +51,13 @@ html {
     }
   }
 }
+
 // Estilos fer
 .clients-say{
     background-color: $color-blue;
 }
 // Fin fer
+
 // Estilos PORTADA
 #portada{
 	height:80vh;
@@ -65,5 +67,39 @@ html {
 // Fin estilos PORTADA
 
 
+//Titulos//
 
+//FORM//
+.form__container{
+    background: $color-blue;
+    color: $font-light;
+    padding: 50px 0;
+}
+.form__items{
+    display: block;
+    margin-top: 15px;
+}
+.form__button{
+    border: none;
+    padding: 2%;
+    background: $color-button;
+    color: $font-light;
+}
+.form__p--margin{
+    margin-bottom: 50px;
+}
 
+//Common//
+.center{
+    text-align: center;
+}
+hr{       
+    margin: 20px 0;
+    box-sizing: content-box;
+}
+.hr{
+    width: 15%; 
+    border: 0;
+    border-bottom: 1px solid $font-light;
+    height: 5px;
+}

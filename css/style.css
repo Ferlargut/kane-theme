@@ -97,7 +97,6 @@
 .col-offset-12 {
   margin-left: 100%; }
 
-
 .about {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #2c3e50; }
@@ -146,5 +145,35 @@ html {
   background-image: url("../assets/img/carousel-bg.jpg");
   background-size: cover; }
 
+.form__container {
+  background: #2c3e50;
+  color: #fff;
+  padding: 50px 0; }
+
+.form__items {
+  display: block;
+  margin-top: 15px; }
+
+.form__button {
+  border: none;
+  padding: 2%;
+  background: #453f45;
+  color: #fff; }
+
+.form__p--margin {
+  margin-bottom: 50px; }
+
+.center {
+  text-align: center; }
+
+hr {
+  margin: 20px 0;
+  box-sizing: content-box; }
+
+.hr {
+  width: 15%;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  height: 5px; }
 
 /*# sourceMappingURL=style.css.map */
