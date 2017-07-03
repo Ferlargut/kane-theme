@@ -1,7 +1,31 @@
 @import'grid';
 @import'variables';
 
+// Estilos generales
+body,
+html {
+  width: 100%;
+  padding: 0;
+  font-family: $font-principal;
+}
+// Estilos PORTADA
+.portada{
+	height:60vh;
+	background-image: url("../assets/img/carousel-bg.jpg");
+	background-size: cover;
+	text-align: center;
+	color: $font-light;
 
+	.portada__titulo--padTop{
+		padding-top: 5%;
+	}
+	.portada__texto--padTop{
+		padding-top: 15%;
+	}
+	.portada__texto--weight{
+		font-weight: 500;
+	}
+}
 // incia ABOUT
 .about{
   font-family: $font-principal;
@@ -20,17 +44,7 @@
   width: 75%;
 }
 // final ABOUT
-/*seccion nancy*/
-.contenedor-precio {
-  border: solid 1px $color-green;
-}
-/*fin nancy*/
-body,
-html {
-  width: 100%;
-  padding: 0;
-  font-family: $font-principal;
-}
+
 /*seccion angie*/
 .navegador {
   background: $color-green;
@@ -46,11 +60,18 @@ html {
   margin-left: 5%;
   display: inline-block;
 
+
   .menu__item {
     text-decoration: none;
     color: $font-light;
     cursor: pointer;
   }
+
+.menu__item--color,
+.social__icono--color {
+  color: $font-light;
+  font-size: 100px;
+
 }
 
 .contenedor-social {
@@ -99,18 +120,64 @@ html {
 // Estilos fer
 .clients-say{
     background-color: $color-blue;
+    .clients-say_item{
+        text-align: center;
+        color: $font-light;
+    }
 }
 // Fin fer
 
+.palette{
+	text-align: center;
+	.palette__titulo--padTop{
+		padding-top: 10%;
+	}
+	.palette__linea{
+		width: 16.6%;
+		margin-left: 42%;
+	}
+	.palette__linea--color{
+		color: $font-grey;
+	}
 
-// Estilos PORTADA
-#portada {
-  height: 80vh;
-  background-image: url("../assets/img/carousel-bg.jpg");
-  background-size: cover;
+}
+
+.colores{
+	// border: 1px solid green;
+	.colores--selector{
+		border: 1px solid black;
+		height: 80px;
+		margin-top: 2%;
+	}
+
 }
 // Fin estilos PORTADA
 
+/*seccion nancy*/
+@mixin titulos-precios($font-principal,$font-precio-color,$size-text){
+    font-family: $font-principal;
+    color: $font-precio-color;
+    font-size: $size-text;
+}
+.texto-centrado{
+  text-align: center;
+}
+#best-price{
+  background-color:$color-blue;
+}
+.contenedorPrecio{
+  border: solid 1px $color-green;
+
+    .contenedorPrecio__item{
+
+      .contenedorPrecio__item--tituloPrecio{
+        @include titulos-precios($font-precios,$font-precio-color,$size-text);
+        padding-top:10px;
+        padding-bottom:10px;
+      } 
+      
+    }
+}
 //Titulos//
 
 //FORM//
@@ -147,3 +214,4 @@ hr{
     border-bottom: 1px solid $font-light;
     height: 5px;
 }
+
