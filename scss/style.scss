@@ -132,7 +132,6 @@ html {
 // Fin estilos Paleta de Colores
 // incia ABOUT
 .about{
-  font-family: $font-principal;
   background: $color-blue;
   padding: 8% 4%;
 }
@@ -143,7 +142,7 @@ html {
 .about__paragraph{
   font-size: $size-text;
 }
-.about__title-color, .about__paragraph-color{
+.about__title--color, .about__paragraph--color{
   color: $font-light;
   line-height: 1.5em;
 }
@@ -189,9 +188,7 @@ html {
     color: $font-light;
     cursor: pointer;
   }
-
 }
-
 .contenedor-social {
   margin-top: 10%;
 }
@@ -234,6 +231,8 @@ html {
       margin-top: 15%;
       font-size: $size-cita;
       list-style: none;
+      text-align: left;
+      margin-left: 30%;
 
       .contacto__list--item{
         margin-top: 5%;
@@ -328,6 +327,7 @@ html {
 }
 .contenedorPrecio{
   border: solid 1px $color-green;
+  padding-bottom:120px;
   .contenedorPrecio__item{
     .contenedorPrecio__item--tituloPrecio{
       @include titulos-precios($font-precios,$font-precio-color,$size-text);
@@ -340,9 +340,24 @@ html {
   .contenedorPrecio__item-#{$i}{
   background-color:$color-green;
   padding-bottom:25px;
+  margin-bottom: 25px;
   }
 }
+.fila-blanca{
+  padding-bottom:10px;
+}
+.texto-azul{
+  color: $color-txt;
+}
 /* fin del for para las segunda fila*/
+// segundo for
+@for $j from 1 through 3 {
+  .fila-gris-#{$j}{
+  background-color:$font-precio-color;
+
+  }
+}
+// fin del segundo for
 /*fin nancy*/
 
 //Titulos//
@@ -380,16 +395,6 @@ html {
   &__title{
     font-size: $size-title;
   }
-  &__hr{
-    width: 10%;
-    height: 5px;
-    background-color: $font-light;
-    margin: 10px;
-
-    border: none;
-    padding: 3%;
-    background: $color-button;
-    color: $font-light;
 }
 
 
@@ -428,6 +433,7 @@ html {
     }
 }
 
+
 //Common//
 .center{
     text-align: center;
@@ -442,5 +448,5 @@ hr{
     border-bottom: 1px solid $font-light;
     height: 5px;
 }
+
 /*fin nancy*/
-}
