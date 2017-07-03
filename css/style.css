@@ -97,6 +97,23 @@
 .col-offset-12 {
   margin-left: 100%; }
 
+
+.about {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #2c3e50; }
+
+.about__title {
+  text-align: center; }
+
+.about__paragraph {
+  font-size: 12px; }
+
+.about__title-color, .about__paragraph-color {
+  color: #fff; }
+
+.about_img-size {
+  width: 75%; }
+
 /*seccion nancy*/
 .contenedor-precio {
   border: solid 1px #27ad60; }
@@ -116,6 +133,7 @@ html {
 .logo,
 .menu {
   margin-top: 5%; }
+
 
 .menu__item--estilo,
 .social__icono--estilo {
@@ -138,9 +156,45 @@ html {
   height: 300px;
   text-align: center; }
 
+.clients-say {
+  background-color: #2c3e50; }
+
+
 #portada {
   height: 80vh;
   background-image: url("../assets/img/carousel-bg.jpg");
   background-size: cover; }
+
+.form__container {
+  background: #2c3e50;
+  color: #fff;
+  padding: 50px 0; }
+
+.form__items {
+  display: block;
+  margin-top: 15px; }
+
+.form__button {
+  border: none;
+  padding: 2%;
+  background: #453f45;
+  color: #fff; }
+
+.form__p--margin {
+  margin-bottom: 50px; }
+
+.center {
+  text-align: center; }
+
+hr {
+  margin: 20px 0;
+  box-sizing: content-box; }
+
+.hr {
+  width: 15%;
+  border: 0;
+  border-bottom: 1px solid #fff;
+  height: 5px; }
+
 
 /*# sourceMappingURL=style.css.map */

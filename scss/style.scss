@@ -1,5 +1,25 @@
-@import 'grid';
-@import 'variables';
+@import'grid';
+@import'variables';
+
+
+// incia ABOUT
+.about{
+  font-family: $font-principal;
+  background: $color-blue;
+}
+.about__title{
+  text-align: center;
+}
+.about__paragraph{
+  font-size: $size-text;
+}
+.about__title-color, .about__paragraph-color{
+  color: $font-light;
+}
+.about_img-size{
+  width: 75%;
+}
+// final ABOUT
 /*seccion nancy*/
 .contenedor-precio {
   border: solid 1px $color-green;
@@ -33,6 +53,7 @@ html {
   font-size: 100px;
 }
 
+
 .menu__item,
 .social {
   margin-left: 5%;
@@ -46,6 +67,14 @@ html {
   height: 300px;
   text-align: center;
 }
+
+// Estilos fer
+.clients-say{
+    background-color: $color-blue;
+}
+// Fin fer
+
+
 // Estilos PORTADA
 #portada {
   height: 80vh;
@@ -53,3 +82,41 @@ html {
   background-size: cover;
 }
 // Fin estilos PORTADA
+
+//Titulos//
+
+//FORM//
+.form__container{
+    background: $color-blue;
+    color: $font-light;
+    padding: 50px 0;
+}
+.form__items{
+    display: block;
+    margin-top: 15px;
+}
+.form__button{
+    border: none;
+    padding: 2%;
+    background: $color-button;
+    color: $font-light;
+}
+.form__p--margin{
+    margin-bottom: 50px;
+}
+
+//Common//
+.center{
+    text-align: center;
+}
+hr{       
+    margin: 20px 0;
+    box-sizing: content-box;
+}
+.hr{
+    width: 15%; 
+    border: 0;
+    border-bottom: 1px solid $font-light;
+    height: 5px;
+}
+
