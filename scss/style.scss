@@ -164,6 +164,12 @@ html {
     color: $font-light;
     font-size: $size-cita;
 }
+.enlinea{
+  display: inline-block;
+}
+.texto-blanco{
+  color: $font-light;
+}
 .padding-precios{
   padding-top: 10px;
   padding-bottom: 10px;
@@ -184,7 +190,7 @@ html {
 #best-price{
   background-color: $color-blue;
 }
-#subtitulo-bestprice{
+.subtitulo-bestprice{
   @extend .titulo-bestprice;
   font-size: $size-text-blanco;
   margin-top: 0;
@@ -192,7 +198,6 @@ html {
 .contenedorPrecio{
   border: solid 1px $color-green;
   .contenedorPrecio__item{
-
     .contenedorPrecio__item--tituloPrecio{
       @include titulos-precios($font-precios,$font-precio-color,$size-text);
     } 
@@ -203,6 +208,7 @@ html {
 @for $i from 1 through 4 {
   .contenedorPrecio__item-#{$i}{
   background-color:$color-green;
+  padding-bottom:25px;
   }
 }
 /* fin del for para las segunda fila*/
