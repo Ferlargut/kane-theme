@@ -165,14 +165,20 @@ html {
   background: #27ad60;
   color: #fff;
   text-align: center; }
-  #contacto .contacto__item {
+  #contacto .contact {
     margin-top: 3%; }
-    #contacto .contacto__item span {
+    #contacto .contact span {
       border-bottom: 1px solid #fff;
       padding-bottom: 5%; }
-    #contacto .contacto__item .contacto__item--list {
+    #contacto .contact .contacto__list {
       margin-top: 15%;
-      font-size: 14px; }
+      font-size: 14px;
+      list-style: none; }
+      #contacto .contact .contacto__list .contacto__list--item {
+        margin-top: 5%; }
+        #contacto .contact .contacto__list .contacto__list--item .contacto__list--icono {
+          text-decoration: none;
+          color: #fff; }
 
 .clients-say {
   background-color: #2c3e50; }

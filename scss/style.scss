@@ -83,16 +83,29 @@ html {
   color: $font-light;
   text-align: center;
 
-  .contacto__item {
+  .contact {
     margin-top: 3%;
 
     span{
       border-bottom: 1px solid $font-light;
       padding-bottom: 5%;
     }
-    .contacto__item--list {
+
+
+    .contacto__list {
       margin-top: 15%;
       font-size: 14px;
+      list-style: none;
+
+      .contacto__list--item{
+        margin-top: 5%;
+
+        .contacto__list--icono {
+          text-decoration: none;
+          color: $font-light;
+        }
+      }
+
     }
   }
 }
