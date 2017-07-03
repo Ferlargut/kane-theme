@@ -267,17 +267,23 @@ html {
     color: $font-light;
     font-size: $size-cita;
 }
-
-.texto-centrado{
-  text-align: center;
+.enlinea{
+  display: inline-block;
+}
+.texto-blanco{
+  color: $font-light;
 }
 .padding-precios{
   padding-top: 10px;
   padding-bottom: 10px;
 }
-#titulo-bestprice{
+.titulo-bestprice{
   @include titulo-bestP($font-principal,$font-light,$size-bestP);
   margin-top: 50px;
+}
+.precios-numeros{
+  @extend .titulo-bestprice;
+  margin-top: 12px;
 }
 #linea-precios{
   border-top:solid 1px $font-light;
@@ -287,27 +293,31 @@ html {
 #best-price{
   background-color: $color-blue;
 }
-#subtitulo-bestprice{
-  @extend #titulo-bestprice;
+.subtitulo-bestprice{
+  @extend .titulo-bestprice;
   font-size: $size-text-blanco;
   margin-top: 0;
 }
 .contenedorPrecio{
   border: solid 1px $color-green;
   .contenedorPrecio__item{
-      .contenedorPrecio__item--tituloPrecio{
-        @include titulos-precios($font-precios,$font-precio-color,$size-text);
-        padding-top:10px;
-        padding-bottom:10px;
-      }
-
-    }
+    .contenedorPrecio__item--tituloPrecio{
+      @include titulos-precios($font-precios,$font-precio-color,$size-text);
+    } 
+    
+  }
 }
+/*for para las segunda fila*/
+@for $i from 1 through 4 {
+  .contenedorPrecio__item-#{$i}{
+  background-color:$color-green;
+  padding-bottom:25px;
+  }
+}
+/* fin del for para las segunda fila*/
 /*fin nancy*/
 
 //Titulos//
-
-
 // What we Do style
 .services{
   background-color: $color-green;

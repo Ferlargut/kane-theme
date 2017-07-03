@@ -278,18 +278,24 @@ html {
     color: #fff; }
 
 /*seccion nancy*/
-.texto-centrado {
-  text-align: center; }
+.enlinea {
+  display: inline-block; }
+
+.texto-blanco {
+  color: #fff; }
 
 .padding-precios {
   padding-top: 10px;
   padding-bottom: 10px; }
 
-#titulo-bestprice, #subtitulo-bestprice {
+.titulo-bestprice, .precios-numeros, .subtitulo-bestprice {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
   font-size: 40px;
   margin-top: 50px; }
+
+.precios-numeros {
+  margin-top: 12px; }
 
 #linea-precios {
   border-top: solid 1px #fff;
@@ -299,7 +305,7 @@ html {
 #best-price {
   background-color: #2c3e50; }
 
-#subtitulo-bestprice {
+.subtitulo-bestprice {
   font-size: 10px;
   margin-top: 0; }
 
@@ -308,10 +314,26 @@ html {
   .contenedorPrecio .contenedorPrecio__item .contenedorPrecio__item--tituloPrecio {
     font-family: "inherit", monospace;
     color: #f5f5f5;
-    font-size: 12px;
-    padding-top: 10px;
-    padding-bottom: 10px; }
+    font-size: 12px; }
 
+/*for para las segunda fila*/
+.contenedorPrecio__item-1 {
+  background-color: #27ad60;
+  padding-bottom: 25px; }
+
+.contenedorPrecio__item-2 {
+  background-color: #27ad60;
+  padding-bottom: 25px; }
+
+.contenedorPrecio__item-3 {
+  background-color: #27ad60;
+  padding-bottom: 25px; }
+
+.contenedorPrecio__item-4 {
+  background-color: #27ad60;
+  padding-bottom: 25px; }
+
+/* fin del for para las segunda fila*/
 /*fin nancy*/
 .services {
   background-color: #27ad60;
