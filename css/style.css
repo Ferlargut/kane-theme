@@ -8,6 +8,7 @@
   max-width: 1200px;
   margin: 0px auto; }
 
+
 .templateRow, .row:before, .row:after {
   content: " ";
   display: table; }
