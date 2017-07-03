@@ -1,9 +1,6 @@
 @import'grid';
 @import'variables';
 
-<<<<<<< HEAD
-=======
-
 // incia ABOUT
 .about{
   font-family: $font-principal;
@@ -27,7 +24,6 @@
   border: solid 1px $color-green;
 }
 /*fin nancy*/
->>>>>>> upstream/master
 body,
 html {
   width: 100%;
@@ -52,7 +48,7 @@ html {
 
 .menu__item--color,
 .social__icono--color {
-  color: $font-ligth;
+  color: $font-light;
   font-size: 100px;
 }
 
@@ -74,6 +70,9 @@ html {
 // Estilos fer
 .clients-say{
     background-color: $color-blue;
+    .clients-say_item{
+        text-align: center;
+    }
 }
 // Fin fer
 
@@ -86,7 +85,6 @@ html {
 }
 // Fin estilos PORTADA
 
-<<<<<<< HEAD
 /*seccion nancy*/
 @mixin titulos-precios($font-principal,$font-precio-color,$size-text){
     font-family: $font-principal;
@@ -111,7 +109,7 @@ html {
       } 
       
     }
-=======
+}
 //Titulos//
 
 //FORM//
@@ -147,7 +145,6 @@ hr{
     border: 0;
     border-bottom: 1px solid $font-light;
     height: 5px;
->>>>>>> upstream/master
 }
 
 /*fin nancy*/
