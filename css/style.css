@@ -116,6 +116,71 @@ html {
   .portada .portada__texto--weight {
     font-weight: 500; }
 
+.palette {
+  text-align: center; }
+  .palette .palette__titulo--padTop {
+    padding-top: 5%; }
+  .palette .palette__linea {
+    width: 16.6%;
+    margin-left: 42%; }
+  .palette .palette__linea--color {
+    color: #c1c1c1; }
+
+.colores .colores__selector {
+  border: 1px solid black;
+  height: 80px;
+  margin-bottom: 1%; }
+.colores .colores__selector--1A {
+  background-color: #69D2E7; }
+.colores .colores__selector--1B {
+  background-color: #A7DBDB; }
+.colores .colores__selector--1C {
+  background-color: #E0E4CC; }
+.colores .colores__selector--1D {
+  background-color: #F38630; }
+.colores .colores__selector--1E {
+  background-color: #FA6900; }
+.colores .colores__selector--2A {
+  background-color: #E94C6F; }
+.colores .colores__selector--2B {
+  background-color: #542733; }
+.colores .colores__selector--2C {
+  background-color: #5A6A62; }
+.colores .colores__selector--2D {
+  background-color: #C6D5CD; }
+.colores .colores__selector--2E {
+  background-color: #FDF200; }
+.colores .colores__selector--3A {
+  background-color: #DB3340; }
+.colores .colores__selector--3B {
+  background-color: #E8B71A; }
+.colores .colores__selector--3C {
+  background-color: #F7EAC8; }
+.colores .colores__selector--3D {
+  background-color: #1FDA9A; }
+.colores .colores__selector--3E {
+  background-color: #28ABE3; }
+.colores .colores__selector--4A {
+  background-color: #588C73; }
+.colores .colores__selector--4B {
+  background-color: #F2E394; }
+.colores .colores__selector--4C {
+  background-color: #F2AE72; }
+.colores .colores__selector--4D {
+  background-color: #D96459; }
+.colores .colores__selector--4E {
+  background-color: #8C4646; }
+.colores .colores__selector--5A {
+  background-color: #D0C91F; }
+.colores .colores__selector--5B {
+  background-color: #85C4B9; }
+.colores .colores__selector--5C {
+  background-color: #008BBA; }
+.colores .colores__selector--5D {
+  background-color: #DF514C; }
+.colores .colores__selector--5E {
+  background-color: #DC403B; }
+
 .about {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #2c3e50; }
@@ -211,21 +276,6 @@ html {
   .clients-say .clients-say_item {
     text-align: center;
     color: #fff; }
-
-.palette {
-  text-align: center; }
-  .palette .palette__titulo--padTop {
-    padding-top: 10%; }
-  .palette .palette__linea {
-    width: 16.6%;
-    margin-left: 42%; }
-  .palette .palette__linea--color {
-    color: #c1c1c1; }
-
-.colores .colores--selector {
-  border: 1px solid black;
-  height: 80px;
-  margin-top: 2%; }
 
 /*seccion nancy*/
 .enlinea {
@@ -330,5 +380,7 @@ hr {
   border: 0;
   border-bottom: 1px solid #fff;
   height: 5px; }
+
+/*fin nancy*/
 
 /*# sourceMappingURL=style.css.map */
