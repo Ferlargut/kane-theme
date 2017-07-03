@@ -96,16 +96,30 @@ html {
     color: $font-light;
     font-size: $size-cita;
 }
+
 .texto-centrado{
   text-align: center;
 }
-#titulo-bestprice{
-  @include titulo-bestP($font-principal,$font-light,$size-bestP);
+.padding-precios{
   padding-top:10px;
   padding-bottom:10px;
 }
+#titulo-bestprice{
+  @include titulo-bestP($font-principal,$font-light,$size-bestP);
+  margin-top: 50px;
+}
+#linea-precios{
+  border-top:solid 1px $font-light;
+  width: 200px;
+  margin-top:15px;
+}
 #best-price{
   background-color:$color-blue;
+}
+#subtitulo-bestprice{
+  @extend #titulo-bestprice;
+  font-size: $size-text-blanco;
+  margin-top: 0;
 }
 .contenedorPrecio{
   border: solid 1px $color-green;
@@ -114,8 +128,6 @@ html {
 
       .contenedorPrecio__item--tituloPrecio{
         @include titulos-precios($font-precios,$font-precio-color,$size-text);
-        padding-top:10px;
-        padding-bottom:10px;
       } 
       
     }
