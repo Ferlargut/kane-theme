@@ -88,11 +88,19 @@ html {
     .clients-say_item{
         text-align: center;
         color: $font-light;
+
         .clients-say_item--cita{
+            font-size: $size-text;
             color: $color-orange;
+            font-family: $font-principal;
         }
     }
 }
+        
+.clients-say_item_p{
+    font-family: $font-cita;
+    font-size: $size-text;            
+    }
 // Fin fer
 
 .palette{
