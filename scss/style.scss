@@ -1,40 +1,207 @@
+@import'grid';
+@import'variables';
 
-@import 'grid';
-@import 'variables';
-
+// Estilos generales
 body,
 html {
   width: 100%;
   padding: 0;
+  font-family: $font-principal;
 }
+// Estilos PORTADA
+.portada{
+	height:60vh;
+	background-image: url("../assets/img/carousel-bg.jpg");
+	background-size: cover;
+	text-align: center;
+	color: $font-light;
 
+	.portada__titulo--padTop{
+		padding-top: 5%;
+	}
+	.portada__texto--padTop{
+		padding-top: 15%;
+	}
+	.portada__texto--weight{
+		font-weight: 500;
+	}
+}
+// incia ABOUT
+.about{
+  font-family: $font-principal;
+  background: $color-blue;
+}
+.about__title{
+  text-align: center;
+}
+.about__paragraph{
+  font-size: $size-text;
+}
+.about__title-color, .about__paragraph-color{
+  color: $font-light;
+}
+.about_img-size{
+  width: 75%;
+}
+// final ABOUT
+
+/*seccion angie*/
 .navegador {
   background: $color-green;
   height: 130px;
 }
 
-.menu , .logo{
+.logo {
   margin-top: 5%;
+}
+
+.menu {
+  margin-top: 5%;
+  margin-left: 5%;
+  display: inline-block;
+
 
   .menu__item {
-    display: inline-block;
-    margin-left: 5%;
+    text-decoration: none;
+    color: $font-light;
+    cursor: pointer;
+  }
 
-    .menu__item--estilo {
-      text-decoration: none;
-      color: $font-ligth;
-      font-family: $font-principal;
-    }
+  .menu__item--color,
+  .social__icono--color {
+    color: $font-light;
+    font-size: 100px;
+
+  }
+}
+.contenedor-social {
+  margin-top: 10%;
+}
+
+.social {
+  font-size: 90px;
+  display: inline-block;
+  margin-left: 3%;
+
+  .social__icono{
+    color: $font-light;
+    cursor: pointer;
   }
 }
 
-// Estilos PORTADA
-#portada{
-	height:80vh;
-	background-image: url("../assets/img/carousel-bg.jpg");
-	background-size: cover;
+#redes-sociales {
+  background-image: url('../assets/img/img-divider.jpg');
+  height: 392px;
+  max-width: 100%;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: round;
+  text-align: center;
+}
+
+#contacto {
+  background: $color-green;
+  color: $font-light;
+  text-align: center;
+
+  .contacto__item {
+    margin-top: 3%;
+
+    span{
+      border-bottom: 1px solid $font-light;
+      padding-bottom: 5%;
+    }
+    .contacto__item--list {
+      margin-top: 15%;
+      font-size: 14px;
+    }
+  }
+}
+// Estilos fer
+.clients-say{
+    background-color: $color-blue;
+    .clients-say_item{
+        text-align: center;
+        color: $font-light;
+    }
+}
+// Fin fer
+
+.palette{
+	text-align: center;
+	.palette__titulo--padTop{
+		padding-top: 10%;
+	}
+	.palette__linea{
+		width: 16.6%;
+		margin-left: 42%;
+	}
+	.palette__linea--color{
+		color: $font-grey;
+	}
+
+}
+
+.colores{
+	// border: 1px solid green;
+	.colores--selector{
+		border: 1px solid black;
+		height: 80px;
+		margin-top: 2%;
+	}
+
 }
 // Fin estilos PORTADA
+
+/*seccion nancy*/
+@mixin titulos-precios($font-principal,$font-precio-color,$size-text){
+    font-family: $font-principal;
+    color: $font-precio-color;
+    font-size: $size-text;
+}
+@mixin titulo-bestP($font-principal,$font-light,$size-cita){
+    font-family: $font-principal;
+    color: $font-light;
+    font-size: $size-cita;
+}
+
+.texto-centrado{
+  text-align: center;
+}
+.padding-precios{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#titulo-bestprice{
+  @include titulo-bestP($font-principal,$font-light,$size-bestP);
+  margin-top: 50px;
+}
+#linea-precios{
+  border-top:solid 1px $font-light;
+  width: 200px;
+  margin-top: 15px;
+}
+#best-price{
+  background-color: $color-blue;
+}
+#subtitulo-bestprice{
+  @extend #titulo-bestprice;
+  font-size: $size-text-blanco;
+  margin-top: 0;
+}
+.contenedorPrecio{
+  border: solid 1px $color-green;
+  .contenedorPrecio__item{
+
+    .contenedorPrecio__item--tituloPrecio{
+      @include titulos-precios($font-precios,$font-precio-color,$size-text);
+    } 
+    
+  }
+}
+/*fin nancy*/
+
+//Titulos//
 
 
 // What we Do style
@@ -56,3 +223,39 @@ html {
     border-style: none;
   }
 }
+
+//FORM//
+.form__container{
+    background: $color-blue;
+    color: $font-light;
+    padding: 50px 0;
+}
+.form__items{
+    display: block;
+    margin-top: 15px;
+}
+.form__button{
+    border: none;
+    padding: 2%;
+    background: $color-button;
+    color: $font-light;
+}
+.form__p--margin{
+    margin-bottom: 50px;
+}
+
+//Common//
+.center{
+    text-align: center;
+}
+hr{
+    margin: 20px 0;
+    box-sizing: content-box;
+}
+.hr{
+    width: 15%;
+    border: 0;
+    border-bottom: 1px solid $font-light;
+    height: 5px;
+}
+
