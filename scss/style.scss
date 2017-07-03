@@ -51,37 +51,72 @@ html {
   height: 130px;
 }
 
-.logo,
-.menu {
+.logo {
   margin-top: 5%;
 }
 
-.menu__item--estilo,
-.social__icono--estilo {
-  text-decoration: none;
-}
+.menu {
+  margin-top: 5%;
+  margin-left: 5%;
+  display: inline-block;
+
+
+  .menu__item {
+    text-decoration: none;
+    color: $font-light;
+    cursor: pointer;
+  }
 
 .menu__item--color,
 .social__icono--color {
   color: $font-light;
   font-size: 100px;
+
 }
 
+.contenedor-social {
+  margin-top: 10%;
+}
 
-.menu__item,
 .social {
-  margin-left: 5%;
+  font-size: 90px;
   display: inline-block;
+  margin-left: 3%;
+
+  .social__icono{
+    color: $font-light;
+    cursor: pointer;
+  }
 }
 
-#contacto {
+#redes-sociales {
   background-image: url('../assets/img/img-divider.jpg');
+  height: 392px;
+  max-width: 100%;
+  background-position: bottom;
   background-size: cover;
-  background-repeat: repeat;
-  height: 300px;
+  background-repeat: round;
   text-align: center;
 }
 
+#contacto {
+  background: $color-green;
+  color: $font-light;
+  text-align: center;
+
+  .contacto__item {
+    margin-top: 3%;
+
+    span{
+      border-bottom: 1px solid $font-light;
+      padding-bottom: 5%;
+    }
+    .contacto__item--list {
+      margin-top: 15%;
+      font-size: 14px;
+    }
+  }
+}
 // Estilos fer
 .clients-say{
     background-color: $color-blue;
@@ -169,16 +204,14 @@ html {
 .center{
     text-align: center;
 }
-hr{       
+hr{
     margin: 20px 0;
     box-sizing: content-box;
 }
 .hr{
-    width: 15%; 
+    width: 15%;
     border: 0;
     border-bottom: 1px solid $font-light;
     height: 5px;
 }
-
-/*fin nancy*/
 
