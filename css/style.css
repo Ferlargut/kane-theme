@@ -97,7 +97,6 @@
 .col-offset-12 {
   margin-left: 100%; }
 
-
 body,
 html {
   width: 100%;
@@ -141,22 +140,8 @@ html {
 .logo {
   margin-top: 5%; }
 
-
 .menu {
   margin-top: 5%;
-
-.menu__item--estilo,
-.social__icono--estilo {
-  text-decoration: none; }
-
-.menu__item--color,
-.social__icono--color {
-  color: #fff;
-  font-size: 100px; }
-
-.menu__item,
-.social {
-
   margin-left: 5%;
   display: inline-block; }
   .menu .menu__item {
@@ -209,12 +194,6 @@ html {
     text-align: center;
     color: #fff; }
 
-
-#portada {
-  height: 80vh;
-  background-image: url("../assets/img/carousel-bg.jpg");
-  background-size: cover; }
-
 .palette {
   text-align: center; }
   .palette .palette__titulo--padTop {
@@ -246,7 +225,6 @@ html {
     padding-top: 10px;
     padding-bottom: 10px; }
 
-
 .form__container {
   background: #2c3e50;
   color: #fff;
@@ -277,6 +255,5 @@ hr {
   border: 0;
   border-bottom: 1px solid #fff;
   height: 5px; }
-
 
 /*# sourceMappingURL=style.css.map */

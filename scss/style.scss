@@ -66,13 +66,8 @@ html {
     color: $font-light;
     cursor: pointer;
   }
-
-.menu__item--color,
-.social__icono--color {
-  color: $font-light;
-  font-size: 100px;
-
 }
+
 
 .contenedor-social {
   margin-top: 10%;
@@ -187,8 +182,8 @@ html {
         @include titulos-precios($font-precios,$font-precio-color,$size-text);
         padding-top:10px;
         padding-bottom:10px;
-      } 
-      
+      }
+
     }
 }
 //Titulos//
@@ -227,4 +222,3 @@ hr{
     border-bottom: 1px solid $font-light;
     height: 5px;
 }
-
