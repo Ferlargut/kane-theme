@@ -269,21 +269,40 @@ html {
 /*for para las segunda fila*/
 .contenedorPrecio__item-1 {
   background-color: #27ad60;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  margin-bottom: 25px; }
 
 .contenedorPrecio__item-2 {
   background-color: #27ad60;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  margin-bottom: 25px; }
 
 .contenedorPrecio__item-3 {
   background-color: #27ad60;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  margin-bottom: 25px; }
 
 .contenedorPrecio__item-4 {
   background-color: #27ad60;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  margin-bottom: 25px; }
+
+.fila-blanca {
+  padding-bottom: 10px; }
+
+.texto-azul {
+  color: #3F415F; }
 
 /* fin del for para las segunda fila*/
+.fila-gris-1 {
+  background-color: #f5f5f5; }
+
+.fila-gris-2 {
+  background-color: #f5f5f5; }
+
+.fila-gris-3 {
+  background-color: #f5f5f5; }
+
 /*fin nancy*/
 .services {
   background-color: #27ad60;
