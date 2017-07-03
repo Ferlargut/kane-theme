@@ -357,52 +357,70 @@ html {
 
 /* fin del for para las segunda fila*/
 /*fin nancy*/
-.services {
+.services__container {
   background-color: #27ad60;
+  color: #fff;
+  padding: 50px 0; }
+
+.services__p--margin {
+  margin-bottom: 50px; }
+
+.services__item {
+  display: inline-block;
+  justify-content: center;
+  padding: 30px; }
+  .services__item--background {
+    background-color: #2c3e50; }
+
+.services__subtitle {
+  padding: 5%; }
+
+.services__text--style {
+  font-size: 12px;
+  line-height: 1.42; }
+
+.services__button {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 200;
   color: #fff;
-  text-align: center; }
-  .services__title {
+  text-align: center;
+  /*fin nancy*/ }
+  .services__button__title {
     font-size: 25px; }
-  .services__hr {
+  .services__button__hr {
     width: 10%;
     height: 5px;
     background-color: #fff;
     margin: 10px;
     border: none;
-    border-style: none; }
-
-.form__title {
-  font-size: 25px; }
-.form__container {
-  background: #2c3e50;
-  color: #fff;
-  padding: 50px 0; }
-.form__items {
-  display: block;
-  margin-top: 15px; }
-.form__button {
-  border: none;
-  padding: 2%;
-  background: #453f45;
-  color: #fff; }
-.form__p--margin {
-  margin-bottom: 50px; }
-
-.center {
-  text-align: center; }
-
-hr {
-  margin: 20px 0;
-  box-sizing: content-box; }
-
-.hr {
-  width: 15%;
-  border: 0;
-  border-bottom: 1px solid #fff;
-  height: 5px; }
-
-/*fin nancy*/
+    padding: 3%;
+    background: #453f45;
+    color: #fff; }
+  .services__button .form__title {
+    font-size: 25px; }
+  .services__button .form__container {
+    background: #2c3e50;
+    color: #fff;
+    padding: 50px 0; }
+  .services__button .form__items {
+    display: block;
+    margin-top: 15px; }
+  .services__button .form__button {
+    border: none;
+    padding: 2%;
+    background: #453f45;
+    color: #fff; }
+  .services__button .form__p--margin {
+    margin-bottom: 50px; }
+  .services__button .center {
+    text-align: center; }
+  .services__button hr {
+    margin: 20px 0;
+    box-sizing: content-box; }
+  .services__button .hr {
+    width: 15%;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    height: 5px; }
 
 /*# sourceMappingURL=style.css.map */
