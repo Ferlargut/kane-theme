@@ -1,2 +1,39 @@
-@import'grid';
-@import'variables';
+
+@import 'grid';
+@import 'variables';
+
+body,
+html {
+  width: 100%;
+  padding: 0;
+}
+
+.navegador {
+  background: $color-green;
+  height: 130px;
+}
+
+.menu , .logo{
+  margin-top: 5%;
+
+  .menu__item {
+    display: inline-block;
+    margin-left: 5%;
+
+    .menu__item--estilo {
+      text-decoration: none;
+      color: $font-ligth;
+      font-family: $font-principal;
+    }
+  }
+}
+
+// Estilos PORTADA
+#portada{
+	height:80vh;
+	background-image: url("../assets/img/carousel-bg.jpg");
+	background-size: cover;
+}
+// Fin estilos PORTADA
+
+
