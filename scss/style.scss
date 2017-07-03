@@ -67,13 +67,13 @@ html {
     cursor: pointer;
   }
 
-.menu__item--color,
-.social__icono--color {
-  color: $font-light;
-  font-size: 100px;
+  .menu__item--color,
+  .social__icono--color {
+    color: $font-light;
+    font-size: 100px;
 
+  }
 }
-
 .contenedor-social {
   margin-top: 10%;
 }
@@ -169,8 +169,8 @@ html {
   text-align: center;
 }
 .padding-precios{
-  padding-top:10px;
-  padding-bottom:10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 #titulo-bestprice{
   @include titulo-bestP($font-principal,$font-light,$size-bestP);
@@ -179,10 +179,10 @@ html {
 #linea-precios{
   border-top:solid 1px $font-light;
   width: 200px;
-  margin-top:15px;
+  margin-top: 15px;
 }
 #best-price{
-  background-color:$color-blue;
+  background-color: $color-blue;
 }
 #subtitulo-bestprice{
   @extend #titulo-bestprice;
@@ -191,14 +191,13 @@ html {
 }
 .contenedorPrecio{
   border: solid 1px $color-green;
+  .contenedorPrecio__item{
 
-    .contenedorPrecio__item{
-
-      .contenedorPrecio__item--tituloPrecio{
-        @include titulos-precios($font-precios,$font-precio-color,$size-text);
-      } 
-      
-    }
+    .contenedorPrecio__item--tituloPrecio{
+      @include titulos-precios($font-precios,$font-precio-color,$size-text);
+    } 
+    
+  }
 }
 /*fin nancy*/
 
@@ -238,4 +237,3 @@ hr{
     border-bottom: 1px solid $font-light;
     height: 5px;
 }
-
