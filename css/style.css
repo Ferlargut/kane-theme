@@ -271,6 +271,28 @@ html {
           text-decoration: none;
           color: #fff; }
 
+.input {
+  font-size: 12px;
+  width: 70%; }
+
+.btn-suscribe {
+  font-size: 12px;
+  padding: 2%;
+  background: #453f45;
+  color: #fff;
+  border: 1px solid #453f45; }
+
+.privacy {
+  font-size: 13px;
+  margin-top: 5%;
+  padding-bottom: 2%; }
+  .privacy p {
+    color: #2c3e50; }
+  .privacy a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer; }
+
 .clients-say {
   background-color: #2c3e50; }
   .clients-say .clients-say_item {
