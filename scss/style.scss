@@ -132,7 +132,6 @@ html {
 // Fin estilos Paleta de Colores
 // incia ABOUT
 .about{
-  font-family: $font-principal;
   background: $color-blue;
   padding: 8% 4%;
 }
@@ -143,7 +142,7 @@ html {
 .about__paragraph{
   font-size: $size-text;
 }
-.about__title-color, .about__paragraph-color{
+.about__title--color, .about__paragraph--color{
   color: $font-light;
   line-height: 1.5em;
 }
@@ -396,16 +395,6 @@ html {
   &__title{
     font-size: $size-title;
   }
-  &__hr{
-    width: 10%;
-    height: 5px;
-    background-color: $font-light;
-    margin: 10px;
-
-    border: none;
-    padding: 3%;
-    background: $color-button;
-    color: $font-light;
 }
 
 //FORM//
@@ -434,7 +423,7 @@ html {
         }
     }
 }
-}
+
 
 //Common//
 .center{
@@ -450,4 +439,5 @@ hr{
     border-bottom: 1px solid $font-light;
     height: 5px;
 }
+
 /*fin nancy*/
