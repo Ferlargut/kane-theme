@@ -51,37 +51,72 @@ html {
   height: 130px;
 }
 
-.logo,
-.menu {
+.logo {
   margin-top: 5%;
 }
 
-.menu__item--estilo,
-.social__icono--estilo {
-  text-decoration: none;
-}
-
-.menu__item--color,
-.social__icono--color {
-  color: $font-light;
-  font-size: 100px;
-}
-
-
-.menu__item,
-.social {
+.menu {
+  margin-top: 5%;
   margin-left: 5%;
   display: inline-block;
+
+
+  .menu__item {
+    text-decoration: none;
+    color: $font-light;
+    cursor: pointer;
+  }
+
+  .menu__item--color,
+  .social__icono--color {
+    color: $font-light;
+    font-size: 100px;
+
+  }
+}
+.contenedor-social {
+  margin-top: 10%;
 }
 
-#contacto {
+.social {
+  font-size: 90px;
+  display: inline-block;
+  margin-left: 3%;
+
+  .social__icono{
+    color: $font-light;
+    cursor: pointer;
+  }
+}
+
+#redes-sociales {
   background-image: url('../assets/img/img-divider.jpg');
+  height: 392px;
+  max-width: 100%;
+  background-position: bottom;
   background-size: cover;
-  background-repeat: repeat;
-  height: 300px;
+  background-repeat: round;
   text-align: center;
 }
 
+#contacto {
+  background: $color-green;
+  color: $font-light;
+  text-align: center;
+
+  .contacto__item {
+    margin-top: 3%;
+
+    span{
+      border-bottom: 1px solid $font-light;
+      padding-bottom: 5%;
+    }
+    .contacto__item--list {
+      margin-top: 15%;
+      font-size: 14px;
+    }
+  }
+}
 // Estilos fer
 .clients-say{
     background-color: $color-blue;
@@ -135,26 +170,70 @@ html {
     color: $font-precio-color;
     font-size: $size-text;
 }
+@mixin titulo-bestP($font-principal,$font-light,$size-cita){
+    font-family: $font-principal;
+    color: $font-light;
+    font-size: $size-cita;
+}
+
 .texto-centrado{
   text-align: center;
 }
+.padding-precios{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#titulo-bestprice{
+  @include titulo-bestP($font-principal,$font-light,$size-bestP);
+  margin-top: 50px;
+}
+#linea-precios{
+  border-top:solid 1px $font-light;
+  width: 200px;
+  margin-top: 15px;
+}
 #best-price{
-  background-color:$color-blue;
+  background-color: $color-blue;
+}
+#subtitulo-bestprice{
+  @extend #titulo-bestprice;
+  font-size: $size-text-blanco;
+  margin-top: 0;
 }
 .contenedorPrecio{
   border: solid 1px $color-green;
+  .contenedorPrecio__item{
 
-    .contenedorPrecio__item{
-
-      .contenedorPrecio__item--tituloPrecio{
-        @include titulos-precios($font-precios,$font-precio-color,$size-text);
-        padding-top:10px;
-        padding-bottom:10px;
-      } 
-      
-    }
+    .contenedorPrecio__item--tituloPrecio{
+      @include titulos-precios($font-precios,$font-precio-color,$size-text);
+    } 
+    
+  }
 }
+/*fin nancy*/
+
 //Titulos//
+
+
+// What we Do style
+.services{
+  background-color: $color-green;
+  font-family: $font-principal;
+  font-weight: 200;
+  color: $font-ligth;
+  text-align: center;
+  &__title{
+    font-size: $size-title;
+  }
+  &__hr{
+    width: 10%;
+    height: 5px;
+    background-color: $font-ligth;
+    margin: 10px;
+    border: none;
+    border-style: none;
+  }
+}
 
 //FORM//
 .form__container{
@@ -180,16 +259,14 @@ html {
 .center{
     text-align: center;
 }
-hr{       
+hr{
     margin: 20px 0;
     box-sizing: content-box;
 }
 .hr{
-    width: 15%; 
+    width: 15%;
     border: 0;
     border-bottom: 1px solid $font-light;
     height: 5px;
 }
-
-/*fin nancy*/
 
