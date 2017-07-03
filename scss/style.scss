@@ -1,6 +1,7 @@
 @import'grid';
 @import'variables';
 
+
 // incia ABOUT
 .about{
   font-family: $font-principal;
@@ -19,3 +20,46 @@
   width: 75%;
 }
 // final ABOUT
+
+/*seccion nancy*/
+.contenedor-precio{
+	border: solid 1px $color-green;
+}
+/*fin nancy*/
+body,
+html {
+  width: 100%;
+  padding: 0;
+}
+
+.navegador {
+  background: $color-green;
+  height: 130px;
+}
+
+.menu , .logo{
+  margin-top: 5%;
+
+  .menu__item {
+    display: inline-block;
+    margin-left: 5%;
+
+    .menu__item--estilo {
+      text-decoration: none;
+      color: $font-light;
+      font-family: $font-principal;
+    }
+  }
+}
+
+// Estilos PORTADA
+#portada{
+	height:80vh;
+	background-image: url("../assets/img/carousel-bg.jpg");
+	background-size: cover;
+}
+// Fin estilos PORTADA
+
+
+
+

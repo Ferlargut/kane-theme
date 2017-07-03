@@ -97,6 +97,7 @@
 .col-offset-12 {
   margin-left: 100%; }
 
+
 .about {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: #2c3e50; }
@@ -112,5 +113,35 @@
 
 .about_img-size {
   width: 75%; }
+
+/*seccion nancy*/
+.contenedor-precio {
+  border: solid 1px #27ad60; }
+
+/*fin nancy*/
+body,
+html {
+  width: 100%;
+  padding: 0; }
+
+.navegador {
+  background: #27ad60;
+  height: 130px; }
+
+.menu, .logo {
+  margin-top: 5%; }
+  .menu .menu__item, .logo .menu__item {
+    display: inline-block;
+    margin-left: 5%; }
+    .menu .menu__item .menu__item--estilo, .logo .menu__item .menu__item--estilo {
+      text-decoration: none;
+      color: #fff;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+#portada {
+  height: 80vh;
+  background-image: url("../assets/img/carousel-bg.jpg");
+  background-size: cover; }
+
 
 /*# sourceMappingURL=style.css.map */
