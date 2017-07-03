@@ -164,17 +164,17 @@ html {
     color: $font-light;
     font-size: $size-cita;
 }
-
-.texto-centrado{
-  text-align: center;
-}
 .padding-precios{
   padding-top: 10px;
   padding-bottom: 10px;
 }
-#titulo-bestprice{
+.titulo-bestprice{
   @include titulo-bestP($font-principal,$font-light,$size-bestP);
   margin-top: 50px;
+}
+.precios-numeros{
+  @extend .titulo-bestprice;
+  margin-top: 12px;
 }
 #linea-precios{
   border-top:solid 1px $font-light;
@@ -185,7 +185,7 @@ html {
   background-color: $color-blue;
 }
 #subtitulo-bestprice{
-  @extend #titulo-bestprice;
+  @extend .titulo-bestprice;
   font-size: $size-text-blanco;
   margin-top: 0;
 }
@@ -199,6 +199,13 @@ html {
     
   }
 }
+/*for para las segunda fila*/
+@for $i from 1 through 4 {
+  .contenedorPrecio__item-#{$i}{
+  background-color:$color-green;
+  }
+}
+/* fin del for para las segunda fila*/
 /*fin nancy*/
 
 //Titulos//
