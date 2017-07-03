@@ -15,7 +15,6 @@ html {
 	background-size: cover;
 	text-align: center;
 	color: $font-light;
-
 	.portada__titulo--padTop{
 		padding-top: 5%;
 	}
@@ -26,10 +25,116 @@ html {
 		font-weight: 500;
 	}
 }
+// Fin estilos Portada
+// Inicio estilos Paleta de Colores
+.palette{
+	text-align: center;
+	.palette__titulo--padTop{
+		padding-top: 5%;
+	}
+	.palette__linea{
+		width: 16.6%;
+		margin-left: 42%;
+	}
+	.palette__linea--color{
+		color: $font-grey;
+	}
+
+}
+
+.colores{
+	.colores__selector{
+		border: 1px solid black;
+		height: 80px;
+		margin-bottom: 1%;
+	}
+	// fila 1
+	.colores__selector--1A{
+		background-color: #69D2E7;
+	}
+	.colores__selector--1B{
+		background-color: #A7DBDB;
+	}
+	.colores__selector--1C{
+		background-color: #E0E4CC;
+	}
+	.colores__selector--1D{
+		background-color: #F38630;
+	}
+	.colores__selector--1E{
+		background-color: #FA6900;
+	}
+	// fila 2
+	.colores__selector--2A{
+		background-color: #E94C6F;
+	}
+	.colores__selector--2B{
+		background-color: #542733;
+	}
+	.colores__selector--2C{
+		background-color: #5A6A62;
+	}
+	.colores__selector--2D{
+		background-color: #C6D5CD;
+	}
+	.colores__selector--2E{
+		background-color: #FDF200;
+	}
+	// fila 3
+	.colores__selector--3A{
+		background-color: #DB3340;
+	}
+	.colores__selector--3B{
+		background-color: #E8B71A;
+	}
+	.colores__selector--3C{
+		background-color: #F7EAC8;
+	}
+	.colores__selector--3D{
+		background-color: #1FDA9A;
+	}
+	.colores__selector--3E{
+		background-color: #28ABE3;
+	}
+	// fila 4
+	.colores__selector--4A{
+		background-color: #588C73;
+	}
+	.colores__selector--4B{
+		background-color: #F2E394;
+	}
+	.colores__selector--4C{
+		background-color: #F2AE72;
+	}
+	.colores__selector--4D{
+		background-color: #D96459;
+	}
+	.colores__selector--4E{
+		background-color: #8C4646;
+	}
+	// fila 5
+	.colores__selector--5A{
+		background-color: #D0C91F;
+	}
+	.colores__selector--5B{
+		background-color: #85C4B9;
+	}
+	.colores__selector--5C{
+		background-color: #008BBA;
+	}
+	.colores__selector--5D{
+		background-color: #DF514C;
+	}
+	.colores__selector--5E{
+		background-color: #DC403B;
+	}
+}
+// Fin estilos Paleta de Colores
 // incia ABOUT
 .about{
   font-family: $font-principal;
   background: $color-blue;
+  padding: 8% 4%;
 }
 .about__title{
   text-align: center;
@@ -43,10 +148,11 @@ html {
   line-height: 1.5em;
 }
 .about_img-size{
-  width: 75%;
+  width: 80%;
 }
 .bars{
   padding-right: 5%;
+  margin-top:15%;
 }
 .progress{
   height: 10px;
@@ -122,11 +228,12 @@ html {
       padding-bottom: 5%;
     }
 
-
     .contacto__list {
       margin-top: 15%;
-      font-size: 14px;
+      font-size: $size-cita;
       list-style: none;
+      text-align: left;
+      margin-left: 30%;
 
       .contacto__list--item{
         margin-top: 5%;
@@ -136,8 +243,35 @@ html {
           color: $font-light;
         }
       }
-
     }
+  }
+}
+
+.input {
+  font-size: $size-text;
+  width: 70%;
+}
+
+.btn-suscribe {
+  font-size: $size-text;
+  padding: 2%;
+  background: $color-button;
+  color: $font-light;
+  border: 1px solid $color-button;
+}
+
+.privacy {
+  font-size: 13px;
+  margin-top: 5%;
+  padding-bottom: 2%;
+  p {
+    color: $color-blue;
+  }
+
+  a{
+    color: $font-light;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
 // Estilos fer
@@ -149,32 +283,6 @@ html {
     }
 }
 // Fin fer
-
-.palette{
-	text-align: center;
-	.palette__titulo--padTop{
-		padding-top: 10%;
-	}
-	.palette__linea{
-		width: 16.6%;
-		margin-left: 42%;
-	}
-	.palette__linea--color{
-		color: $font-grey;
-	}
-
-}
-
-.colores{
-	// border: 1px solid green;
-	.colores--selector{
-		border: 1px solid black;
-		height: 80px;
-		margin-top: 2%;
-	}
-
-}
-// Fin estilos PORTADA
 
 /*seccion nancy*/
 @mixin titulos-precios($font-principal,$font-precio-color,$size-text){
@@ -224,8 +332,8 @@ html {
   .contenedorPrecio__item{
     .contenedorPrecio__item--tituloPrecio{
       @include titulos-precios($font-precios,$font-precio-color,$size-text);
-    } 
-    
+    }
+
   }
 }
 /*for para las segunda fila*/
@@ -255,8 +363,32 @@ html {
 
 //Titulos//
 // What we Do style
-.services{
+.services__container{
   background-color: $color-green;
+  color: $font-light;
+  padding: 50px 0;
+}
+.services__p--margin{
+    margin-bottom: 50px;
+}
+
+.services__item{
+  display: inline-block;
+  justify-content: center;
+  padding: 30px;
+  &--background{
+    background-color: $color-blue;
+  }
+}
+.services__subtitle{
+  padding: 5%;
+}
+.services__text--style{
+  font-size: $size-text;
+  line-height: 1.42;
+}
+.services__button{
+
   font-family: $font-principal;
   font-weight: 200;
   color: $font-light;
@@ -269,9 +401,11 @@ html {
     height: 5px;
     background-color: $font-light;
     margin: 10px;
+
     border: none;
-    border-style: none;
-  }
+    padding: 3%;
+    background: $color-button;
+    color: $font-light;
 }
 
 //FORM//
@@ -283,7 +417,7 @@ html {
         background: $color-blue;
         color: $font-light;
         padding: 50px 0;
-    } 
+    }
     &__items{
         display: block;
         margin-top: 15px;
@@ -297,8 +431,9 @@ html {
     &__p{
         &--margin{
             margin-bottom: 50px;
-        }  
+        }
     }
+}
 }
 
 //Common//
@@ -315,3 +450,4 @@ hr{
     border-bottom: 1px solid $font-light;
     height: 5px;
 }
+/*fin nancy*/
