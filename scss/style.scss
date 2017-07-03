@@ -134,6 +134,7 @@ html {
 .about{
   font-family: $font-principal;
   background: $color-blue;
+  padding: 8% 4%;
 }
 .about__title{
   text-align: center;
@@ -147,10 +148,11 @@ html {
   line-height: 1.5em;
 }
 .about_img-size{
-  width: 75%;
+  width: 80%;
 }
 .bars{
   padding-right: 5%;
+  margin-top:15%;
 }
 .progress{
   height: 10px;
