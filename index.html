@@ -17,14 +17,14 @@
           <img src="assets/img/logo.png" alt="Kane" class="logo">
         </div>
         <div class="col-6 col-offset-3">
-          <ul class="menu">
-            <li class="menu__item"><a href="#" class="menu__item--estilo menu__item--color">About</a></li>
-            <li class="menu__item"><a href="#" class="menu__item--estilo menu__item--color">Service</a></li>
-            <li class="menu__item"><a href="#" class="menu__item--estilo menu__item--color">Team</a></li>
-            <li class="menu__item"><a href="#" class="menu__item--estilo menu__item--color">Price</a></li>
-            <li class="menu__item"><a href="#" class="menu__item--estilo menu__item--color">Clients</a></li>
-            <li class="menu__item"><a href="#" class="menu__item--estilo menu__item--color">Facts</a></li>
-            <li class="menu__item"><a href="#" class="menu__item--estilo menu__item--color">Contact</a></li>
+          <ul>
+            <li class="menu"><a href="#" class="menu__item">About</a></li>
+            <li class="menu"><a href="#" class="menu__item">Service</a></li>
+            <li class="menu"><a href="#" class="menu__item">Team</a></li>
+            <li class="menu"><a href="#" class="menu__item">Price</a></li>
+            <li class="menu"><a href="#" class="menu__item">Clients</a></li>
+            <li class="menu"><a href="#" class="menu__item">Facts</a></li>
+            <li class="menu"><a href="#" class="menu__item">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -136,15 +136,16 @@
             </div>
         </div>
     </section>
-    <!--Parte Val-->
 
+
+    <!--Parte Val-->
     <!--Start Section What We Do-->
-    <section class="container">
+    <section class="container services">
       <div class="row">
-        <div class="col-12">
-          <h2>WHAT WE DO</h2>
-          <hr>
-          <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+        <div class="col-12 services__title">
+            <h2 class="">WHAT WE DO</h2>
+            <hr class="services__hr ">
+            <h5 class="services__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
         </div>
       </div>
       <div class="row">
@@ -190,7 +191,7 @@
     <!--End Section What We Do-->
 
     <!--Start Section Awesome Team-->
-    <section class="container">
+    <section class="container" id="awesomeTeam">
       <div class="row">
         <div class="col-12">
           <h2>OUR AWESOME TEAM</h2>
@@ -267,21 +268,46 @@
     <!--End Section Awesome Team-->
 
     <!--Parte Zitle-->
-    <section id="best-price" class="container">
+    <section id="best-price">
+        <div class="row">
+            <h2 id="titulo-bestprice" class="texto-centrado padding-precios">
+                BEST PRICE GURANTEED
+            </h2>
+            <div id="linea-precios" class="texto-centrado col-offset-5"></div>
+        </div>
+        <div class="row texto-centrado">
+            <p id="subtitulo-bestprice">Donec sed odio dui. Etiam porta sem malesuada magna mollis eusmodi.</p>
+        </div>
         <div class="row">
             <div class="col-3">
                 <div class="contenedorPrecio texto-centrado">
                     <div class="row contenedorPrecio__item">
-                        <h5 class="contenedorPrecio__item--tituloPrecio">STARTER</h5>
-                    </div>
-                    <div>
-                        
+                        <h5 class="contenedorPrecio__item--tituloPrecio padding-precios">STARTER</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
+            <div class="col-3">
+                <div class="contenedorPrecio texto-centrado">
+                    <div class="row contenedorPrecio__item">
+                        <h5 class="contenedorPrecio__item--tituloPrecio padding-precios">BASIC</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="contenedorPrecio texto-centrado">
+                    <div class="row contenedorPrecio__item">
+                        <h5 class="contenedorPrecio__item--tituloPrecio padding-precios">FEATURE</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="contenedorPrecio texto-centrado">
+                    <div class="row contenedorPrecio__item">
+                        <h5 class="contenedorPrecio__item--tituloPrecio padding-precios">PROFESSIONAL</h5>
+                    </div>
+                </div>
+            </div>
+                
         </div>
     </section>
     <!-- fin zitle -->
@@ -318,7 +344,7 @@
             <h2 class="center">GET IN TOUCH</h2>
             <div class="row">
                 <hr class="hr col-offset-5 col-2">
-            </div>            
+            </div>
             <p class="center form__p--margin">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod</p>
             <form class="row">
                 <input class="form__items col-6 col-offset-3" type="text" placeholder="Name*">
@@ -326,26 +352,48 @@
                 <input class="form__items col-6 col-offset-3" type="number" placeholder="Phone">
                 <textarea class="form__items col-6 col-offset-3" name="" id="" cols="30" rows="10" placeholder="Message*"></textarea>
                 <div class="center center form__items col-6 col-offset-3">
-                    <button class="form__button" type="submit">Submit</button>  
+                    <button class="form__button" type="submit">Submit</button>
                 </div>
                 <p class="col-offset-3 form__items">*Required</p>
             </form>
         </div>
     </section>
     <!--Parte Angie-->
+    <section id="redes-sociales">
+      <div class="container">
+        <div class="row">
+          <div class="col-8 col-offset-2 contenedor-social">
+              <ul>
+                <li class="social"><a href="#" class="social__icono"><i class="fa fa-facebook-square"></i></a></li>
+                <li class="social"><a href="#" class="social__icono"><i class="fa fa-twitter-square"></i></a></li>
+                <li class="social"><a href="#" class="social__icono"><i class="fa fa-linkedin-square"></i></a></li>
+                <li class="social"><a href="#" class="social__icono"><i class="fa fa-pinterest-square"></i></a></li>
+                <li class="social"><a href="#" class="social__icono"><i class="fa fa-google-plus-square "></i></a></li>
+                <li class="social"><a href="#" class="social__icono"><i class="fa fa-tumblr-square"></i></a></li>
+                <li class="social"><a href="#" class="social__icono"><i class="fa fa-instagram-square"></i></a></li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="contacto">
       <div class="container">
         <div class="row">
-          <div class="col-10">
-              <ul>
-                <li class="social"><a href="#" class="social__icono--estilo social__icono--color"><i class="fa fa-facebook-square"></i></a></li>
-                <li class="social"><a href="#" class="social__icono--estilo social__icono--color"><i class="fa fa-twitter-square"></i></a></li>
-                <li class="social"><a href="#" class="social__icono--estilo social__icono--color"><i class="fa fa-linkedin-square"></i></a></li>
-                <li class="social"><a href="#" class="social__icono--estilo social__icono--color"><i class="fa fa-pinterest-square"></i></a></li>
-                <li class="social"><a href="#" class="social__icono--estilo social__icono--color"><i class="fa fa-google-plus-square "></i></a></li>
-                <li class="social"><a href="#" class="social__icono--estilo social__icono--color"><i class="fa fa-tumblr-square"></i></a></li>
-                <li class="social"><a href="#" class="social__icono--estilo social__icono--color"><i class="fa fa-instagram-square"></i></a></li>
-              </ul>
+          <div class="col-4 contacto__item">
+            <span>Visit Us</span>
+            <ul class="contacto__item--list">
+              <li><a href="#"> <i class="fa fa-location-arrow"></i> 101 Lorem Ipsum Street</a></li>
+              <li><a href="#"><i class="fa fa-map-marker"></i></a></li>
+              <li><a href="#"><i class="fa fa-flag"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-4 contacto__item">
+            <span>Write Us</span>
+
+          </div>
+          <div class="col-4 contacto__item">
+            <span>Newsletter</span>
           </div>
         </div>
       </div>
