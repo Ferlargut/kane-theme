@@ -212,8 +212,8 @@ html {
 
     .contenedorPrecio__item--tituloPrecio{
       @include titulos-precios($font-precios,$font-precio-color,$size-text);
-    } 
-    
+    }
+
   }
 }
 /*fin nancy*/
@@ -222,23 +222,35 @@ html {
 
 
 // What we Do style
-.services{
+.services__container{
   background-color: $color-green;
-  font-family: $font-principal;
-  font-weight: 200;
-  color: $font-ligth;
-  text-align: center;
-  &__title{
-    font-size: $size-title;
+  color: $font-light;
+  padding: 50px 0;
+}
+.services__p--margin{
+    margin-bottom: 50px;
+}
+
+.services__item{
+  display: inline-block;
+  justify-content: center;
+  padding: 30px;
+  &--background{
+    background-color: $color-blue;
   }
-  &__hr{
-    width: 10%;
-    height: 5px;
-    background-color: $font-ligth;
-    margin: 10px;
+}
+.services__subtitle{
+  padding: 5%;
+}
+.services__text--style{
+  font-size: $size-text;
+  line-height: 1.42;
+}
+.services__button{
     border: none;
-    border-style: none;
-  }
+    padding: 3%;
+    background: $color-button;
+    color: $font-light;
 }
 
 //FORM//
