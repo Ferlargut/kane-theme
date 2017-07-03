@@ -15,7 +15,6 @@ html {
 	background-size: cover;
 	text-align: center;
 	color: $font-light;
-
 	.portada__titulo--padTop{
 		padding-top: 5%;
 	}
@@ -26,6 +25,111 @@ html {
 		font-weight: 500;
 	}
 }
+// Fin estilos Portada
+// Inicio estilos Paleta de Colores
+.palette{
+	text-align: center;
+	.palette__titulo--padTop{
+		padding-top: 5%;
+	}
+	.palette__linea{
+		width: 16.6%;
+		margin-left: 42%;
+	}
+	.palette__linea--color{
+		color: $font-grey;
+	}
+
+}
+
+.colores{
+	.colores__selector{
+		border: 1px solid black;
+		height: 80px;
+		margin-bottom: 1%;
+	}
+	// fila 1
+	.colores__selector--1A{
+		background-color: #69D2E7;
+	}
+	.colores__selector--1B{
+		background-color: #A7DBDB;
+	}
+	.colores__selector--1C{
+		background-color: #E0E4CC;
+	}
+	.colores__selector--1D{
+		background-color: #F38630;
+	}
+	.colores__selector--1E{
+		background-color: #FA6900;
+	}
+	// fila 2
+	.colores__selector--2A{
+		background-color: #E94C6F;
+	}
+	.colores__selector--2B{
+		background-color: #542733;
+	}
+	.colores__selector--2C{
+		background-color: #5A6A62;
+	}
+	.colores__selector--2D{
+		background-color: #C6D5CD;
+	}
+	.colores__selector--2E{
+		background-color: #FDF200;
+	}
+	// fila 3
+	.colores__selector--3A{
+		background-color: #DB3340;
+	}
+	.colores__selector--3B{
+		background-color: #E8B71A;
+	}
+	.colores__selector--3C{
+		background-color: #F7EAC8;
+	}
+	.colores__selector--3D{
+		background-color: #1FDA9A;
+	}
+	.colores__selector--3E{
+		background-color: #28ABE3;
+	}
+	// fila 4
+	.colores__selector--4A{
+		background-color: #588C73;
+	}
+	.colores__selector--4B{
+		background-color: #F2E394;
+	}
+	.colores__selector--4C{
+		background-color: #F2AE72;
+	}
+	.colores__selector--4D{
+		background-color: #D96459;
+	}
+	.colores__selector--4E{
+		background-color: #8C4646;
+	}
+	// fila 5
+	.colores__selector--5A{
+		background-color: #D0C91F;
+	}
+	.colores__selector--5B{
+		background-color: #85C4B9;
+	}
+	.colores__selector--5C{
+		background-color: #008BBA;
+	}
+	.colores__selector--5D{
+		background-color: #DF514C;
+	}
+	.colores__selector--5E{
+		background-color: #DC403B;
+	}
+}
+// Fin estilos Paleta de Colores
 // incia ABOUT
 .about{
   font-family: $font-principal;
@@ -84,13 +188,8 @@ html {
     cursor: pointer;
   }
 
-  .menu__item--color,
-  .social__icono--color {
-    color: $font-light;
-    font-size: 100px;
-
-  }
 }
+
 .contenedor-social {
   margin-top: 10%;
 }
@@ -121,17 +220,56 @@ html {
   color: $font-light;
   text-align: center;
 
-  .contacto__item {
+  .contact {
     margin-top: 3%;
 
     span{
       border-bottom: 1px solid $font-light;
       padding-bottom: 5%;
     }
-    .contacto__item--list {
+
+    .contacto__list {
       margin-top: 15%;
-      font-size: 14px;
+      font-size: $size-cita;
+      list-style: none;
+
+      .contacto__list--item{
+        margin-top: 5%;
+
+        .contacto__list--icono {
+          text-decoration: none;
+          color: $font-light;
+        }
+      }
     }
+  }
+}
+
+.input {
+  font-size: $size-text;
+  width: 70%;
+}
+
+.btn-suscribe {
+  font-size: $size-text;
+  padding: 2%;
+  background: $color-button;
+  color: $font-light;
+  border: 1px solid $color-button;
+}
+
+.privacy {
+  font-size: 13px;
+  margin-top: 5%;
+  padding-bottom: 2%;
+  p {
+    color: $color-blue;
+  }
+
+  a{
+    color: $font-light;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
 // Estilos fer
@@ -144,32 +282,6 @@ html {
 }
 // Fin fer
 
-.palette{
-	text-align: center;
-	.palette__titulo--padTop{
-		padding-top: 10%;
-	}
-	.palette__linea{
-		width: 16.6%;
-		margin-left: 42%;
-	}
-	.palette__linea--color{
-		color: $font-grey;
-	}
-
-}
-
-.colores{
-	// border: 1px solid green;
-	.colores--selector{
-		border: 1px solid black;
-		height: 80px;
-		margin-top: 2%;
-	}
-
-}
-// Fin estilos PORTADA
-
 /*seccion nancy*/
 @mixin titulos-precios($font-principal,$font-precio-color,$size-text){
     font-family: $font-principal;
@@ -181,17 +293,23 @@ html {
     color: $font-light;
     font-size: $size-cita;
 }
-
-.texto-centrado{
-  text-align: center;
+.enlinea{
+  display: inline-block;
+}
+.texto-blanco{
+  color: $font-light;
 }
 .padding-precios{
   padding-top: 10px;
   padding-bottom: 10px;
 }
-#titulo-bestprice{
+.titulo-bestprice{
   @include titulo-bestP($font-principal,$font-light,$size-bestP);
   margin-top: 50px;
+}
+.precios-numeros{
+  @extend .titulo-bestprice;
+  margin-top: 12px;
 }
 #linea-precios{
   border-top:solid 1px $font-light;
@@ -201,26 +319,31 @@ html {
 #best-price{
   background-color: $color-blue;
 }
-#subtitulo-bestprice{
-  @extend #titulo-bestprice;
+.subtitulo-bestprice{
+  @extend .titulo-bestprice;
   font-size: $size-text-blanco;
   margin-top: 0;
 }
 .contenedorPrecio{
   border: solid 1px $color-green;
   .contenedorPrecio__item{
-
     .contenedorPrecio__item--tituloPrecio{
       @include titulos-precios($font-precios,$font-precio-color,$size-text);
     }
 
   }
 }
+/*for para las segunda fila*/
+@for $i from 1 through 4 {
+  .contenedorPrecio__item-#{$i}{
+  background-color:$color-green;
+  padding-bottom:25px;
+  }
+}
+/* fin del for para las segunda fila*/
 /*fin nancy*/
 
 //Titulos//
-
-
 // What we Do style
 .services__container{
   background-color: $color-green;
@@ -247,6 +370,20 @@ html {
   line-height: 1.42;
 }
 .services__button{
+
+  font-family: $font-principal;
+  font-weight: 200;
+  color: $font-light;
+  text-align: center;
+  &__title{
+    font-size: $size-title;
+  }
+  &__hr{
+    width: 10%;
+    height: 5px;
+    background-color: $font-light;
+    margin: 10px;
+
     border: none;
     padding: 3%;
     background: $color-button;
@@ -254,23 +391,30 @@ html {
 }
 
 //FORM//
-.form__container{
-    background: $color-blue;
-    color: $font-light;
-    padding: 50px 0;
-}
-.form__items{
-    display: block;
-    margin-top: 15px;
-}
-.form__button{
-    border: none;
-    padding: 2%;
-    background: $color-button;
-    color: $font-light;
-}
-.form__p--margin{
-    margin-bottom: 50px;
+.form{
+    &__title{
+        font-size: $size-title;
+    }
+   &__container{
+        background: $color-blue;
+        color: $font-light;
+        padding: 50px 0;
+    }
+    &__items{
+        display: block;
+        margin-top: 15px;
+    }
+    &__button{
+        border: none;
+        padding: 2%;
+        background: $color-button;
+        color: $font-light;
+    }
+    &__p{
+        &--margin{
+            margin-bottom: 50px;
+        }
+    }
 }
 
 //Common//
@@ -286,4 +430,6 @@ hr{
     border: 0;
     border-bottom: 1px solid $font-light;
     height: 5px;
+}
+/*fin nancy*/
 }
