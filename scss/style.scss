@@ -4,7 +4,20 @@
 //Titulos//
 
 //FORM//
+.form__container{
+    background: $color-blue;
+    color: $font-ligth;
+}
 .form__items{
     display: block;
     margin-bottom: 15px;
+}
+.form__button{
+    border: none;
+    padding: 2%;
+    background: $color-button;
+    color: $font-ligth;
+}
+.center{
+    text-align: center;
 }
