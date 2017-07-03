@@ -97,9 +97,11 @@
 .col-offset-12 {
   margin-left: 100%; }
 
+
 #portada {
   height: 80vh;
   background-image: url("../assets/img/carousel-bg.jpg");
   background-size: cover; }
+
 
 /*# sourceMappingURL=style.css.map */
