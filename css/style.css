@@ -97,6 +97,24 @@
 .col-offset-12 {
   margin-left: 100%; }
 
+body,
+html {
+  width: 100%;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.portada {
+  height: 60vh;
+  background-image: url("../assets/img/carousel-bg.jpg");
+  background-size: cover;
+  text-align: center;
+  color: #fff; }
+  .portada .portada__titulo--padTop {
+    padding-top: 5%; }
+  .portada .portada__texto--padTop {
+    padding-top: 15%; }
+  .portada .portada__texto--weight {
+    font-weight: 500; }
 
 .about {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -114,17 +132,6 @@
 .about_img-size {
   width: 75%; }
 
-/*seccion nancy*/
-.contenedor-precio {
-  border: solid 1px #27ad60; }
-
-/*fin nancy*/
-body,
-html {
-  width: 100%;
-  padding: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
 /*seccion angie*/
 .navegador {
   background: #27ad60;
@@ -133,7 +140,6 @@ html {
 .logo,
 .menu {
   margin-top: 5%; }
-
 
 .menu__item--estilo,
 .social__icono--estilo {
@@ -158,12 +164,40 @@ html {
 
 .clients-say {
   background-color: #2c3e50; }
+  .clients-say .clients-say_item {
+    text-align: center;
+    color: #fff; }
 
+.palette {
+  text-align: center; }
+  .palette .palette__titulo--padTop {
+    padding-top: 10%; }
+  .palette .palette__linea {
+    width: 16.6%;
+    margin-left: 42%; }
+  .palette .palette__linea--color {
+    color: #c1c1c1; }
 
-#portada {
-  height: 80vh;
-  background-image: url("../assets/img/carousel-bg.jpg");
-  background-size: cover; }
+.colores .colores--selector {
+  border: 1px solid black;
+  height: 80px;
+  margin-top: 2%; }
+
+/*seccion nancy*/
+.texto-centrado {
+  text-align: center; }
+
+#best-price {
+  background-color: #2c3e50; }
+
+.contenedorPrecio {
+  border: solid 1px #27ad60; }
+  .contenedorPrecio .contenedorPrecio__item .contenedorPrecio__item--tituloPrecio {
+    font-family: "inherit", monospace;
+    color: #f5f5f5;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
 
 .form__container {
   background: #2c3e50;
@@ -196,5 +230,6 @@ hr {
   border-bottom: 1px solid #fff;
   height: 5px; }
 
+/*fin nancy*/
 
 /*# sourceMappingURL=style.css.map */
