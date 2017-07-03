@@ -97,4 +97,8 @@
 .col-offset-12 {
   margin-left: 100%; }
 
+.form__items {
+  display: block;
+  margin-bottom: 15px; }
+
 /*# sourceMappingURL=style.css.map */
