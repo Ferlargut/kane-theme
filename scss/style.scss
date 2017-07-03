@@ -1,7 +1,6 @@
 @import'grid';
 @import'variables';
 
-
 // incia ABOUT
 .about{
   font-family: $font-principal;
@@ -86,6 +85,31 @@ html {
 }
 // Fin estilos PORTADA
 
+/*seccion nancy*/
+@mixin titulos-precios($font-principal,$font-precio-color,$size-text){
+    font-family: $font-principal;
+    color: $font-precio-color;
+    font-size: $size-text;
+}
+.texto-centrado{
+  text-align: center;
+}
+#best-price{
+  background-color:$color-blue;
+}
+.contenedorPrecio{
+  border: solid 1px $color-green;
+
+    .contenedorPrecio__item{
+
+      .contenedorPrecio__item--tituloPrecio{
+        @include titulos-precios($font-precios,$font-precio-color,$size-text);
+        padding-top:10px;
+        padding-bottom:10px;
+      } 
+      
+    }
+}
 //Titulos//
 
 //FORM//
@@ -123,3 +147,4 @@ hr{
     height: 5px;
 }
 
+/*fin nancy*/
