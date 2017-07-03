@@ -223,21 +223,11 @@ html {
 .contenedorPrecio{
   border: solid 1px $color-green;
   .contenedorPrecio__item{
-<<<<<<< HEAD
     .contenedorPrecio__item--tituloPrecio{
       @include titulos-precios($font-precios,$font-precio-color,$size-text);
     } 
     
   }
-=======
-      .contenedorPrecio__item--tituloPrecio{
-        @include titulos-precios($font-precios,$font-precio-color,$size-text);
-        padding-top:10px;
-        padding-bottom:10px;
-      }
-
-    }
->>>>>>> upstream/master
 }
 /*for para las segunda fila*/
 @for $i from 1 through 4 {
@@ -250,8 +240,6 @@ html {
 /*fin nancy*/
 
 //Titulos//
-
-
 // What we Do style
 .services{
   background-color: $color-green;
