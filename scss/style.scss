@@ -217,10 +217,6 @@ html {
 .contenedorPrecio{
   border: solid 1px $color-green;
   .contenedorPrecio__item{
-
-
-    .contenedorPrecio__item{
-
       .contenedorPrecio__item--tituloPrecio{
         @include titulos-precios($font-precios,$font-precio-color,$size-text);
         padding-top:10px;
@@ -228,7 +224,6 @@ html {
       }
 
     }
-
 }
 /*fin nancy*/
 
@@ -281,8 +276,6 @@ html {
         }  
     }
 }
-
-
 
 //Common//
 .center{
